@@ -173,3 +173,19 @@ footer{display:flex;justify-content:space-between;gap:20px;padding:14px 4px 2px;
   footer{flex-direction:column}
 }
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+
+/* v1.1 profile depth + terminal polish */
+.split-card{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.fact-list{margin:11px 0 0;padding:0;list-style:none;display:grid;gap:8px;color:#89a5b1;font-size:10px}
+.fact-list li{padding-left:14px;position:relative}.fact-list li::before{content:'›';position:absolute;left:0;color:var(--accent);font-weight:800}
+.academic-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.academic-grid article{border:1px solid var(--line);background:linear-gradient(145deg,#081821,#06131a);border-radius:10px;padding:18px;box-shadow:inset 0 1px 0 rgba(255,255,255,.035)}
+.academic-grid article.wide{grid-column:1/-1}
+.academic-grid span{font:800 8px var(--mono);color:var(--accent);letter-spacing:.7px}.academic-grid b{display:block;font-size:16px;margin:12px 0 5px}.academic-grid p{color:#7795a2;line-height:1.55;margin:0}
+.statement-card,.challenge-card{margin-top:18px}
+.recognition-head{display:flex;align-items:flex-end;justify-content:space-between;gap:20px}
+.recognition-metric{min-width:110px;border:1px solid #1f5364;background:#07151e;border-radius:10px;padding:12px;text-align:center}.recognition-metric b{display:block;font-size:28px;color:var(--accent)}.recognition-metric span{display:block;color:#688895;font-size:8px;text-transform:uppercase}
+.terminal-hints{height:28px;border-top:1px solid var(--line);display:flex;align-items:center;gap:14px;padding:0 13px;color:#456674;font:7px var(--mono);text-transform:uppercase;letter-spacing:.5px}
+.terminal-output a{color:var(--accent);text-decoration:none}.terminal-output a:hover{text-decoration:underline}
+.term-list{display:grid;gap:3px;margin-top:5px}.term-list b{color:#dce9ee}.term-dim{color:#587986}
+@media(max-width:760px){.split-card,.academic-grid{grid-template-columns:1fr}.academic-grid article.wide{grid-column:auto}.recognition-head{align-items:flex-start;flex-direction:column}}

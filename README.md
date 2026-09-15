@@ -1,69 +1,63 @@
 # Asif Security Console
 
-A static, zero-build personal cybersecurity portfolio designed for GitHub Pages.
+Interactive terminal-style cybersecurity profile for Asif Nawaz Minhas.
 
-## Files
+## Live site
 
-- `index.html`
-- `assets/style.css`
-- `assets/app.js`
-- `assets/favicon.svg`
-- `.github/workflows/deploy.yml`
-- `CNAME`
+https://about.asifnawazminhas.com
 
-## Custom domain
+## v1.1 highlights
 
-The project is configured for:
+- expanded public profile content based on the main About page
+- Academic section
+- deeper certification coverage
+- broader responsible-disclosure recognition timeline
+- 68 CVE metric
+- improved terminal aliases (`link`, `cert`, etc.)
+- terminal history with Up/Down arrows
+- Tab autocomplete
+- additional commands: `education`, `recognition`, `cves`, `recent`
+- clickable terminal links
+- responsive layout
+- no backend or build step
 
-`about.asifnawazminhas.com`
+## Terminal commands
 
-If you want a different hostname, change the value in `CNAME` before deploying.
+```text
+help
+about
+skills
+certs
+education
+recognition
+cves
+projects
+links
+whoami
+recent
+clear
+```
+
+The terminal is informational only and does not execute operating-system commands.
+
+## Related sites
+
+- Main site: https://www.asifnawazminhas.com
+- Security Notes: https://notes.asifnawazminhas.com
+- Security Studio: https://studio.asifnawazminhas.com
+- GitHub: https://github.com/asifnawazminhas
 
 ## GitHub Pages
 
-1. Create a new GitHub repository, for example:
-   `asifnawazminhas/about-console`
-2. Upload all files from this ZIP to the repository root.
-3. Open:
-   **Settings -> Pages**
-4. Under **Build and deployment**, choose:
-   **Source: GitHub Actions**
-5. Push/commit to `main`.
-6. Wait for the **Deploy About Console to GitHub Pages** workflow to finish.
-7. In **Settings -> Pages**, set the custom domain:
-   `about.asifnawazminhas.com`
-8. Enable **Enforce HTTPS** after DNS is valid.
+The repository includes `.github/workflows/deploy.yml` for GitHub Pages.
 
-## Cloudflare DNS
+1. Upload all repository files.
+2. In **Settings -> Pages**, select **GitHub Actions**.
+3. Commit to `main`.
+4. Set the custom domain to `about.asifnawazminhas.com`.
+5. In Cloudflare create `CNAME about -> asifnawazminhas.github.io`.
+6. Use DNS-only until GitHub validates the domain and HTTPS is available.
 
-Create:
+## License
 
-- Type: `CNAME`
-- Name: `about`
-- Target: `asifnawazminhas.github.io`
-- Proxy status: DNS only initially
-
-After GitHub Pages validates the domain and HTTPS works, you can decide whether to enable the Cloudflare proxy.
-
-Do not point `about.asifnawazminhas.com` back to itself.
-
-## Terminal
-
-The terminal is informational only and supports:
-
-- `help`
-- `about`
-- `skills`
-- `certs`
-- `projects`
-- `links`
-- `whoami`
-- `clear`
-
-It does not execute operating-system commands.
-
-## Personalisation
-
-Edit public profile text in `index.html`.
-
-The monogram avatar intentionally avoids requiring a personal photograph. You can replace the avatar later with your own image if desired.
+MIT License. See `LICENSE`.
