@@ -26,6 +26,7 @@ const terminalCommands = {
         <span><b>academic</b> — open education</span>
         <span><b>research</b> — vulnerability research</span>
         <span><b>recognition</b> — disclosure achievements</span>
+        <span><b>openbug</b> — OpenBugBounty statistics</span>
         <span><b>projects</b> — open projects</span>
         <span><b>contact</b> — open contact</span>
         <span><b>links</b> — public links</span>
@@ -83,7 +84,18 @@ const terminalCommands = {
     return `<div class="term-block">
       <span class="cmd">DISCLOSURE RECOGNITION</span>
       <div>26 public acknowledgements across 2023 — 2026.</div>
+      <div>OpenBugBounty: 603 reports · 151 patched vulnerabilities · active since 07.09.2023.</div>
       <div>NASA · United Nations · WHO · UNESCO · UNICEF · BASF · Schiphol · TU Delft · KNAW · VU · UU · and others.</div>
+      <div style="color:var(--accent)">→ Recognition panel opened on the left.</div>
+    </div>`;
+  },
+  openbug: () => {
+    openSection('recognition');
+    return `<div class="term-block">
+      <span class="cmd">OPENBUGBOUNTY PROFILE</span>
+      <div>603 total reports · 151 patched vulnerabilities.</div>
+      <div>Active since 07.09.2023.</div>
+      <div>Profile: https://www.openbugbounty.org/researchers/ethicaldudeNL/</div>
       <div style="color:var(--accent)">→ Recognition panel opened on the left.</div>
     </div>`;
   },
@@ -112,7 +124,7 @@ const terminalCommands = {
 const aliases = {
   certification:'certs', certifications:'certs', cert:'certs',
   education:'academic', edu:'academic', project:'projects', link:'links',
-  exp:'experience', work:'experience', cve:'research', cves:'research', disclosure:'research', achievements:'recognition', achievement:'recognition', halloffame:'recognition', openbug:'recognition'
+  exp:'experience', work:'experience', cve:'research', cves:'research', disclosure:'research', achievements:'recognition', achievement:'recognition', halloffame:'recognition'
 };
 
 function normalise(raw) {

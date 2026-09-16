@@ -122,3 +122,29 @@ This forces clients and intermediary caches to fetch the matching CSS and JavaSc
 - recognition / achievements / halloffame terminal commands
 - static asset cache busting updated to v2.0.0
 - portrait placeholder retained for the final image update
+
+
+### v2.1 additions
+
+- OpenBugBounty statistics panel based on the public researcher profile:
+  - 603 total reports
+  - 151 total patched vulnerabilities
+  - active since 07.09.2023
+- dedicated `openbug` terminal command
+- stylised global responsible-disclosure world map
+- global reach metrics: 7 continents, 50+ country / regional TLDs, 600+ reported issues, 151+ verified fixes
+- no individual vulnerable targets are plotted on the map
+- cache-busting updated to v2.1.0
+
+
+### v2.2 refinement
+
+- simplified OpenBugBounty statistics
+- removed VIP-site count and temporary ranking metrics
+- retained:
+  - 603 total reports
+  - 151 patched vulnerabilities
+  - active since 07.09.2023
+- added a clear direct link to the public OpenBugBounty researcher profile
+- terminal output updated to match the simplified presentation
+- cache-busting updated to v2.2.0
