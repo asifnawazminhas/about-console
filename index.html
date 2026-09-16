@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Asif Nawaz Minhas — Offensive Security Specialist focused on penetration testing, red teaming, vulnerability research and enterprise security." />
   <meta name="theme-color" content="#041016" />
-  <meta name="build-version" content="2.2.0" />
+  <meta name="build-version" content="2.3.0" />
   <meta property="og:title" content="Asif Nawaz Minhas // Offensive Security Console" />
   <meta property="og:description" content="Interactive cybersecurity portfolio covering offensive security, experience, certifications, responsible disclosure and security projects." />
   <meta property="og:type" content="website" />
@@ -15,7 +15,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/style.css?v=2.2.0" />
+  <link rel="stylesheet" href="assets/style.css?v=2.3.0" />
 </head>
 <body>
   <div class="page-grid" aria-hidden="true"></div>
@@ -320,35 +320,61 @@
               </div>
             </div>
 
-            <div class="world-map" aria-label="Stylised world map showing global disclosure reach">
-              <svg viewBox="0 0 1000 500" role="img" aria-hidden="true">
+            <div class="world-map" aria-label="Minimal world map showing global disclosure reach">
+              <svg viewBox="0 0 1000 520" role="img" aria-hidden="true">
+                <defs>
+                  <filter id="mapGlow" x="-50%" y="-50%" width="200%" height="200%">
+                    <feGaussianBlur stdDeviation="5" result="blur"/>
+                    <feMerge>
+                      <feMergeNode in="blur"/>
+                      <feMergeNode in="SourceGraphic"/>
+                    </feMerge>
+                  </filter>
+                </defs>
                 <g class="map-grid">
-                  <path d="M0 100H1000M0 200H1000M0 300H1000M0 400H1000"/>
-                  <path d="M200 0V500M400 0V500M600 0V500M800 0V500"/>
+                  <path d="M0 80H1000M0 160H1000M0 240H1000M0 320H1000M0 400H1000"/>
+                  <path d="M125 0V520M250 0V520M375 0V520M500 0V520M625 0V520M750 0V520M875 0V520"/>
                 </g>
-                <g class="land">
-                  <path d="M83 122l65-33 79 9 41 30 34 4 30 25-17 24-42 3-19 25-51 3-38 34-38-14-12-30-45-14-21-29 34-37z"/>
-                  <path d="M276 250l35 18 23 45-7 35 22 44-15 61-33-5-14-44 7-38-24-47 6-69z"/>
-                  <path d="M418 112l36-22 57 13 44-13 46 9 38-18 70 16 51 23 25 28-28 20-49 4-23 22-51-3-34 18-48-5-25 20-43-19-49-3-35-34 18-55z"/>
-                  <path d="M476 226l35 0 27 22 18 51-13 64-37 72-44-3-24-53 6-44-25-55 24-39 33-15z"/>
-                  <path d="M744 282l40-13 56 20 20 32-34 18-51-5-31-28 0-24z"/>
-                  <path d="M836 359l27-11 19 19-14 17-28-5-4-20z"/>
-                  <path d="M153 81l20-23 39 3 26 16-10 21-44 3-31-20z"/>
-                  <path d="M616 236l27-7 23 16-10 20-30 4-10-33z"/>
+                <g class="continent">
+                  <path d="M79 147l36-46 74-39 67 2 45 31-10 30 19 23 33 31-19 29-60 4-31 40-58 44-52-15-16-40-47-14-23-36 42-44z"/>
+                  <path d="M304 300l50 25 27 57-9 40 26 57-21 89-53-6-17-63 13-47-23-52 7-100z"/>
+                  <path d="M504 118l34-27 62 8 51 13 55-14 74 16 62 38 34 35-41 24-61 6-25 28-69-4-41 17-57-1-30 21-57-3-38-35-13-29 19-93z"/>
+                  <path d="M556 280l47-18 65 7 47 48 19 74-26 109-57 79-67-4-31-70 7-63-29-65 25-54z"/>
+                  <path d="M715 273l43-11 23 21-14 28-39 5-13-43z"/>
+                  <path d="M765 320l42-12 29 26-8 26-43 7-20-47z"/>
+                  <path d="M825 362l56-17 46 27 30 46-38 29-76-6-37-31v-48z"/>
+                  <path d="M906 460l28-12 25 24-16 24-39-8-5-28z"/>
+                  <path d="M226 54l26-20 52 4 37 24-13 28-53 5-42-21z"/>
                 </g>
-                <g class="route">
-                  <path d="M160 145C280 72 350 86 470 145S690 173 820 123"/>
-                  <path d="M190 180C300 250 390 215 500 205S700 218 805 300"/>
-                  <path d="M460 250C575 196 680 203 785 272"/>
+                <g class="reach-zone">
+                  <circle cx="224" cy="168" r="52"/>
+                  <circle cx="341" cy="381" r="42"/>
+                  <circle cx="579" cy="162" r="38"/>
+                  <circle cx="611" cy="386" r="48"/>
+                  <circle cx="736" cy="293" r="32"/>
+                  <circle cx="836" cy="178" r="44"/>
+                  <circle cx="892" cy="391" r="30"/>
                 </g>
-                <g class="map-node">
-                  <circle cx="160" cy="145" r="7"/><circle cx="268" cy="137" r="7"/><circle cx="430" cy="146" r="7"/>
-                  <circle cx="505" cy="180" r="7"/><circle cx="565" cy="240" r="7"/><circle cx="640" cy="160" r="7"/>
-                  <circle cx="740" cy="158" r="7"/><circle cx="808" cy="295" r="7"/><circle cx="312" cy="295" r="7"/>
-                  <circle cx="490" cy="328" r="7"/><circle cx="690" cy="248" r="7"/>
+                <g class="reach-node" filter="url(#mapGlow)">
+                  <circle cx="224" cy="168" r="7"/>
+                  <circle cx="341" cy="381" r="7"/>
+                  <circle cx="579" cy="162" r="7"/>
+                  <circle cx="611" cy="386" r="7"/>
+                  <circle cx="736" cy="293" r="7"/>
+                  <circle cx="836" cy="178" r="7"/>
+                  <circle cx="892" cy="391" r="7"/>
+                </g>
+                <g class="region-label">
+                  <text x="182" y="112">NORTH AMERICA</text>
+                  <text x="306" y="446">SOUTH AMERICA</text>
+                  <text x="534" y="120">EUROPE</text>
+                  <text x="575" y="455">AFRICA</text>
+                  <text x="699" y="251">MIDDLE EAST</text>
+                  <text x="780" y="133">ASIA</text>
+                  <text x="842" y="451">OCEANIA</text>
                 </g>
               </svg>
-              <div class="map-caption">GLOBAL RESPONSIBLE DISCLOSURE // AGGREGATED VIEW</div>
+              <div class="map-caption">GLOBAL DISCLOSURE FOOTPRINT // REGIONAL PRESENCE VIEW</div>
             </div>
           </div>
 
@@ -671,7 +697,7 @@
       <aside class="terminal-column">
         <div class="terminal">
           <div class="terminal-head">
-            <span>ASIF-SHELL v2.2.0</span>
+            <span>ASIF-SHELL v2.3.0</span>
             <span class="online"><i></i> ONLINE</span>
           </div>
           <div class="terminal-body" id="terminalOutput">
@@ -732,6 +758,6 @@ OFFENSIVE SECURITY CONSOLE
     </footer>
   </div>
 
-  <script src="assets/app.js?v=2.2.0"></script>
+  <script src="assets/app.js?v=2.3.0"></script>
 </body>
 </html>
