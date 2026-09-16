@@ -6,9 +6,9 @@ Interactive terminal-style cybersecurity portfolio for Asif Nawaz Minhas.
 
 https://about.asifnawazminhas.com
 
-## v1.7 refinement
+## v1.8 research + comms update
 
-This release refines the two-panel cyber-console layout:
+This release expands the cyber-console portfolio with public research and communication modules:
 
 - left-side interactive portfolio dashboard
 - improved terminal responses: commands now print a concise summary and open the matching left-side panel
@@ -78,3 +78,19 @@ about.asifnawazminhas.com
 ## License
 
 MIT License.
+
+
+### v1.8 additions
+
+- dedicated Vulnerability Research tab
+- 68 total CVEs / published vulnerability records represented as:
+  - 65 Wordfence discoveries
+  - CVE-2024-34955
+  - CVE-2024-34954
+  - CVE-2025-54384
+- direct links to Wordfence, GitHub CVE records and CKAN advisory
+- redesigned COMMS / Public Channels area
+- GitHub, LinkedIn, Security Notes, Security Studio, Main Site and Research Profile nodes
+- no email address or non-functional contact form
+- `research`, `cve`, `cves`, and `disclosure` terminal commands / aliases
+- image placeholder retained for a later portrait update

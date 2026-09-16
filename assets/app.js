@@ -24,6 +24,7 @@ const terminalCommands = {
         <span><b>skills</b> — open skills</span>
         <span><b>certs</b> — open certifications</span>
         <span><b>academic</b> — open education</span>
+        <span><b>research</b> — vulnerability research</span>
         <span><b>projects</b> — open projects</span>
         <span><b>contact</b> — open contact</span>
         <span><b>links</b> — public links</span>
@@ -66,6 +67,16 @@ const terminalCommands = {
       <div style="color:var(--accent)">→ Academic panel opened on the left.</div>
     </div>`;
   },
+  research: () => {
+    openSection('research');
+    return `<div class="term-block">
+      <span class="cmd">VULNERABILITY RESEARCH</span>
+      <div>68 CVEs / published vulnerability records.</div>
+      <div>65 Wordfence discoveries + 3 additional published CVEs / advisories.</div>
+      <div>CVE-2024-34955 · CVE-2024-34954 · CVE-2025-54384</div>
+      <div style="color:var(--accent)">→ Research panel opened on the left.</div>
+    </div>`;
+  },
   projects: () => {
     openSection('projects');
     return `<div class="term-block">
@@ -77,8 +88,9 @@ const terminalCommands = {
   contact: () => {
     openSection('contact');
     return `<div class="term-block">
-      <span class="cmd">CONTACT</span>
-      <div>LinkedIn · GitHub · Security Notes · Security Studio</div>
+      <span class="cmd">PUBLIC CHANNELS</span>
+      <div>GitHub · LinkedIn · Security Notes · Security Studio · Main Site · Research Profile</div>
+      <div>No email or contact form is exposed on this console.</div>
       <div style="color:var(--accent)">→ Contact panel opened on the left.</div>
     </div>`;
   },
@@ -90,7 +102,7 @@ const terminalCommands = {
 const aliases = {
   certification:'certs', certifications:'certs', cert:'certs',
   education:'academic', edu:'academic', project:'projects', link:'links',
-  exp:'experience', work:'experience'
+  exp:'experience', work:'experience', cve:'research', cves:'research', disclosure:'research'
 };
 
 function normalise(raw) {

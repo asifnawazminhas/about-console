@@ -36,8 +36,9 @@
         <button class="nav-btn" data-section="skills"><span>[ 03 ]</span> SKILLS</button>
         <button class="nav-btn" data-section="certifications"><span>[ 04 ]</span> CERTIFICATIONS</button>
         <button class="nav-btn" data-section="academic"><span>[ 05 ]</span> ACADEMIC</button>
-        <button class="nav-btn" data-section="projects"><span>[ 06 ]</span> PROJECTS</button>
-        <button class="nav-btn" data-section="contact"><span>[ 07 ]</span> CONTACT</button>
+        <button class="nav-btn" data-section="research"><span>[ 06 ]</span> RESEARCH</button>
+        <button class="nav-btn" data-section="projects"><span>[ 07 ]</span> PROJECTS</button>
+        <button class="nav-btn" data-section="contact"><span>[ 08 ]</span> CONTACT</button>
       </nav>
 
       <div class="system-online">
@@ -229,6 +230,52 @@
           </div>
         </section>
 
+        <!-- RESEARCH -->
+        <section id="research" class="panel-view">
+          <div class="section-intro">
+            <span class="eyebrow">// VULNERABILITY RESEARCH</span>
+            <h2>Research & Disclosure</h2>
+            <p>Published vulnerability research, coordinated disclosure and public CVE records.</p>
+          </div>
+
+          <div class="research-hero">
+            <div class="research-total">
+              <span class="research-number">68</span>
+              <div>
+                <b>CVEs / published vulnerability records</b>
+                <p>65 Wordfence discoveries plus 3 additional published CVEs / advisories.</p>
+              </div>
+            </div>
+            <div class="research-breakdown">
+              <article><span>65</span><b>Wordfence</b><small>All Time Discoveries</small></article>
+              <article><span>03</span><b>Additional</b><small>Published CVEs / advisories</small></article>
+            </div>
+          </div>
+
+          <div class="research-grid">
+            <a href="https://www.wordfence.com/threat-intel/vulnerabilities/researchers/asif-nawaz-minhas?sortby=cvss_score&sort=desc#jump" target="_blank" rel="noopener noreferrer">
+              <span class="research-index">01</span>
+              <div><small>WORDFENCE_PROFILE</small><h3>65 vulnerability discoveries</h3><p>Public researcher profile containing the Wordfence discoveries attributed to Asif Nawaz Minhas.</p></div>
+              <b>OPEN →</b>
+            </a>
+            <a href="https://github.com/ethicalhackerNL/CVEs/blob/main/Budget%20Management/SQLi.md" target="_blank" rel="noopener noreferrer">
+              <span class="research-index">02</span>
+              <div><small>CVE-2024-34955</small><h3>Budget Management SQL Injection</h3><p>Published SQL injection vulnerability record for Budget Management.</p></div>
+              <b>OPEN →</b>
+            </a>
+            <a href="https://github.com/ethicalhackerNL/CVEs/blob/main/Budget%20Management/XSS/XSS.md" target="_blank" rel="noopener noreferrer">
+              <span class="research-index">03</span>
+              <div><small>CVE-2024-34954</small><h3>Budget Management Stored XSS</h3><p>Published stored cross-site scripting vulnerability record for Budget Management.</p></div>
+              <b>OPEN →</b>
+            </a>
+            <a href="https://github.com/ckan/ckan/security/advisories/GHSA-2r4h-8jxv-w2j8" target="_blank" rel="noopener noreferrer">
+              <span class="research-index">04</span>
+              <div><small>CVE-2025-54384</small><h3>CKAN Stored XSS</h3><p>CKAN security advisory crediting the reported stored cross-site scripting issue.</p></div>
+              <b>OPEN →</b>
+            </a>
+          </div>
+        </section>
+
         <!-- PROJECTS -->
         <section id="projects" class="panel-view">
           <div class="section-intro">
@@ -247,22 +294,61 @@
         <section id="contact" class="panel-view">
           <div class="section-intro">
             <span class="eyebrow">// COMMS</span>
-            <h2>Contact</h2>
-            <p>Use my public profiles to connect.</p>
+            <h2>Public Channels</h2>
+            <p>Verified public profiles, projects and technical resources. No contact form or email endpoint is exposed here.</p>
           </div>
-          <div class="contact-grid">
-            <a href="https://www.linkedin.com/in/asifminhasnl/" target="_blank" rel="noopener noreferrer"><b>LinkedIn</b><span>Professional profile</span></a>
-            <a href="https://github.com/asifnawazminhas" target="_blank" rel="noopener noreferrer"><b>GitHub</b><span>Code and projects</span></a>
-            <a href="https://notes.asifnawazminhas.com" target="_blank" rel="noopener noreferrer"><b>Security Notes</b><span>Technical knowledge base</span></a>
-            <a href="https://studio.asifnawazminhas.com" target="_blank" rel="noopener noreferrer"><b>Security Studio</b><span>Interactive security workspace</span></a>
+
+          <div class="comms-layout">
+            <div class="comms-nodes">
+              <a class="comms-node" href="https://github.com/asifnawazminhas" target="_blank" rel="noopener noreferrer">
+                <span class="node-icon">GH</span><div><small>GITHUB_NODE</small><b>github.com/asifnawazminhas</b></div><span class="node-arrow">→</span>
+              </a>
+              <a class="comms-node" href="https://www.linkedin.com/in/asifminhasnl/" target="_blank" rel="noopener noreferrer">
+                <span class="node-icon">IN</span><div><small>LINKEDIN_PORT</small><b>linkedin.com/in/asifminhasnl</b></div><span class="node-arrow">→</span>
+              </a>
+              <a class="comms-node" href="https://notes.asifnawazminhas.com" target="_blank" rel="noopener noreferrer">
+                <span class="node-icon">NT</span><div><small>SECURITY_NOTES</small><b>notes.asifnawazminhas.com</b></div><span class="node-arrow">→</span>
+              </a>
+              <a class="comms-node" href="https://studio.asifnawazminhas.com" target="_blank" rel="noopener noreferrer">
+                <span class="node-icon">ST</span><div><small>SECURITY_STUDIO</small><b>studio.asifnawazminhas.com</b></div><span class="node-arrow">→</span>
+              </a>
+              <a class="comms-node" href="https://www.asifnawazminhas.com" target="_blank" rel="noopener noreferrer">
+                <span class="node-icon">WWW</span><div><small>MAIN_SITE</small><b>www.asifnawazminhas.com</b></div><span class="node-arrow">→</span>
+              </a>
+              <a class="comms-node" href="https://www.wordfence.com/threat-intel/vulnerabilities/researchers/asif-nawaz-minhas?sortby=cvss_score&sort=desc#jump" target="_blank" rel="noopener noreferrer">
+                <span class="node-icon">CVE</span><div><small>RESEARCH_PROFILE</small><b>Wordfence vulnerability researcher</b></div><span class="node-arrow">→</span>
+              </a>
+            </div>
+
+            <div class="connect-console">
+              <div class="connect-head"><span>CONNECT_CONSOLE</span><i class="pulse"></i></div>
+              <pre><span class="console-key">STATUS</span>      PUBLIC CHANNELS AVAILABLE
+<span class="console-key">LOCATION</span>    NETHERLANDS
+<span class="console-key">FOCUS</span>       OFFENSIVE SECURITY
+            RED TEAMING
+            VULNERABILITY RESEARCH
+
+<span class="console-key">CHANNELS</span>
+  github      code & projects
+  linkedin    professional profile
+  notes       technical knowledge base
+  studio      interactive security workspace
+  website     articles & portfolio
+  research    public vulnerability record
+
+<span class="console-ok">[ READY ]</span> Select a channel on the left.</pre>
+              <div class="connect-tags">
+                <span>Authorised testing</span><span>Responsible disclosure</span><span>Knowledge sharing</span>
+              </div>
+            </div>
           </div>
         </section>
-      </section>
+</section>
 
       <aside class="terminal-column">
         <div class="terminal">
           <div class="terminal-head">
-            <span>ASIF-SHELL v1.7.0</span>
+            <span>ASIF-SHELL v1.8.0</span>
             <span class="online"><i></i> ONLINE</span>
           </div>
           <div class="terminal-body" id="terminalOutput">
