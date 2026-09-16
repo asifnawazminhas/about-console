@@ -148,3 +148,16 @@ This forces clients and intermediary caches to fetch the matching CSS and JavaSc
 - added a clear direct link to the public OpenBugBounty researcher profile
 - terminal output updated to match the simplified presentation
 - cache-busting updated to v2.2.0
+
+
+### v2.4 refinement
+
+- removed the world map from the Recognition page
+- retained the global disclosure story as a clean metric summary
+- kept:
+  - 7 continents represented
+  - 50+ country / regional TLDs
+  - 600+ reported issues
+  - 151+ verified fixes
+- all OpenBugBounty statistics, recognition cards, terminal commands and links retained
+- cache-busting updated to v2.4.0
