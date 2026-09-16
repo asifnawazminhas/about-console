@@ -1,13 +1,13 @@
 const tabs = document.querySelectorAll('.tab');
 const views = document.querySelectorAll('.view');
 
+function openSection(section) {
+  tabs.forEach(t => t.classList.toggle('active', t.dataset.section === section));
+  views.forEach(v => v.classList.toggle('active', v.id === section));
+}
+
 tabs.forEach(tab => {
-  tab.addEventListener('click', () => {
-    tabs.forEach(t => t.classList.remove('active'));
-    views.forEach(v => v.classList.remove('active'));
-    tab.classList.add('active');
-    document.getElementById(tab.dataset.section)?.classList.add('active');
-  });
+  tab.addEventListener('click', () => openSection(tab.dataset.section));
 });
 
 const output = document.getElementById('terminalOutput');
@@ -16,7 +16,10 @@ const form = document.getElementById('terminalForm');
 const history = [];
 let historyIndex = 0;
 
-const commandNames = ['help','about','skills','certs','education','recognition','cves','projects','links','whoami','recent','clear'];
+const commandNames = [
+  'help','about','current','career','experience','skills','certs','education',
+  'recognition','cves','projects','links','whoami','recent','clear'
+];
 
 const commands = {
   help: () => `
@@ -24,7 +27,9 @@ const commands = {
   <div class="term-success">Available commands</div>
   <div class="term-list">
     <div><b>about</b> <span class="term-dim">profile summary</span></div>
-    <div><b>skills</b> <span class="term-dim">security focus areas</span></div>
+    <div><b>current</b> <span class="term-dim">current role</span></div>
+    <div><b>career</b> <span class="term-dim">career overview</span></div>
+    <div><b>skills</b> <span class="term-dim">security capability areas</span></div>
     <div><b>certs</b> <span class="term-dim">certifications</span></div>
     <div><b>education</b> <span class="term-dim">academic background</span></div>
     <div><b>recognition</b> <span class="term-dim">responsible-disclosure highlights</span></div>
@@ -36,13 +41,27 @@ const commands = {
     <div><b>clear</b> <span class="term-dim">clear terminal</span></div>
   </div>
 </div>`,
-  about: () => `<div class="term-block"><div class="term-success">Asif Nawaz Minhas</div><div>Penetration tester and security researcher from the Netherlands, focused on offensive security, red teaming, purple teaming and vulnerability research.</div></div>`,
-  skills: () => `<div class="term-block"><div class="term-success">Focus areas</div><div>Web Security · Windows · Active Directory · Red Teaming · Purple Teaming · Security Research</div></div>`,
-  certs: () => `<div class="term-block"><div class="term-success">Certifications</div><div>OSEP · OSCP · OSWP · OSWA · CRTO · CRTP · CISSP · CISM · ATT&CK Purple Teaming Methodology</div></div>`,
-  education: () => `<div class="term-block"><div class="term-success">Academic background</div><div>Master's — Information Security, Royal Holloway, University of London</div><div>Bachelor's — Information Technology, Windesheim University of Applied Sciences</div></div>`,
-  recognition: () => `<div class="term-block"><div class="term-success">Recognition highlights</div><div>NASA · United Nations · WHO · UNESCO · UNICEF · BASF · Schiphol · Wordfence · TU Delft · KNAW · VU Amsterdam · Utrecht University</div></div>`,
-  cves: () => `<div class="term-block"><div class="term-success">68 CVEs reported</div><div>Vulnerability research contributing to security improvements in widely-used software.</div></div>`,
-  projects: () => `<div class="term-block"><div class="term-success">Projects</div><div><a href="https://studio.asifnawazminhas.com" target="_blank" rel="noopener noreferrer">Security Studio</a> → interactive assessment workspace</div><div><a href="https://notes.asifnawazminhas.com" target="_blank" rel="noopener noreferrer">Security Notes</a> → technical knowledge base</div><div><a href="https://www.asifnawazminhas.com" target="_blank" rel="noopener noreferrer">Main site</a> → research and writing</div></div>`,
+  about: () => `<div class="term-block"><div class="term-success">Asif Nawaz Minhas</div><div>Offensive Security Specialist focused on penetration testing, red teaming, purple teaming and vulnerability research.</div></div>`,
+  current: () => `<div class="term-block">
+    <div class="term-success">SEQRIT — Cyber Resilience by Routz</div>
+    <div>Offensive Security Specialist | Red Teaming | Penetration Testing</div>
+    <div class="term-dim">Feb 2024 — Present · Diemen, Netherlands · Hybrid</div>
+    <div class="term-list compact">
+      <div>› Web, infrastructure and enterprise assessments</div>
+      <div>› Authentication, access-control, injection and privilege-escalation testing</div>
+      <div>› Red-team-style adversary simulation and defensive-readiness validation</div>
+      <div>› Technical reporting, remediation guidance and stakeholder communication</div>
+      <div>› Responsible disclosure and vulnerability research</div>
+    </div>
+  </div>`,
+  career: () => `<div class="term-block"><div class="term-success">Career overview</div><div>SEQRIT — Offensive Security Specialist</div><div>Rijksoverheid — Penetration Tester / Ethical Hacker / Senior Cyber Security Specialist</div><div>DIVD — Volunteer Security Researcher</div><div>Hackpertise — Owner</div><div>purpleteaming.ai — Co-Founder</div><div>Earlier roles across application management, technical support, business information administration and internships.</div></div>`,
+  experience: () => { openSection('experience'); return `<div class="term-success">Opened Experience tab.</div>`; },
+  skills: () => { openSection('skills'); return `<div class="term-block"><div class="term-success">Capability areas</div><div>Web & API Security · Windows · Active Directory · Infrastructure · Red Teaming · Purple Teaming · Vulnerability Research · Reporting · Security Automation</div></div>`; },
+  certs: () => { openSection('certifications'); return `<div class="term-block"><div class="term-success">Certifications</div><div>OSEP · OSCP · OSWP · OSWA · CRTO · CRTP · CISSP · CISM · APTMC · CEH</div></div>`; },
+  education: () => { openSection('academic'); return `<div class="term-block"><div class="term-success">Academic background</div><div>Master's — Information Security, Royal Holloway, University of London</div><div>Bachelor's — Information Technology, Windesheim University of Applied Sciences</div></div>`; },
+  recognition: () => { openSection('recognition'); return `<div class="term-block"><div class="term-success">Recognition highlights</div><div>NASA · United Nations · WHO · UNESCO · UNICEF · BASF · Schiphol · Wordfence · TU Delft · KNAW · VU Amsterdam · Utrecht University</div></div>`; },
+  cves: () => `<div class="term-block"><div class="term-success">68 CVEs reported</div><div>Vulnerability research contributing to security improvements in widely used software.</div></div>`,
+  projects: () => { openSection('projects'); return `<div class="term-block"><div class="term-success">Projects</div><div><a href="https://studio.asifnawazminhas.com" target="_blank" rel="noopener noreferrer">Security Studio</a></div><div><a href="https://notes.asifnawazminhas.com" target="_blank" rel="noopener noreferrer">Security Notes</a></div><div><a href="https://www.asifnawazminhas.com" target="_blank" rel="noopener noreferrer">Main site</a></div></div>`; },
   links: () => `<div class="term-block"><div><a href="https://github.com/asifnawazminhas" target="_blank" rel="noopener noreferrer">GitHub</a></div><div><a href="https://www.linkedin.com/in/asifminhasnl/" target="_blank" rel="noopener noreferrer">LinkedIn</a></div><div><a href="https://notes.asifnawazminhas.com" target="_blank" rel="noopener noreferrer">Security Notes</a></div><div><a href="https://studio.asifnawazminhas.com" target="_blank" rel="noopener noreferrer">Security Studio</a></div></div>`,
   whoami: () => `<div class="term-block"><span class="term-cmd">asif</span>@security-console <span class="term-success">authorised-user</span></div>`,
   recent: () => `<div class="term-block"><div class="term-success">Recent public content</div><div>CVE-2025-31161 — CrushFTP Authentication Bypass</div><div>CVE-2025-29927 — Next.js Middleware Authorization Bypass</div><div>OSWP review</div><div>OSEP review</div></div>`,
@@ -53,7 +72,7 @@ const aliases = {
   cert:'certs', certificate:'certs', certifications:'certs',
   link:'links', project:'projects', edu:'education', academic:'education',
   achievement:'recognition', achievements:'recognition', hof:'recognition',
-  cve:'cves', cves:'cves'
+  cve:'cves', exp:'experience', work:'career', seqrit:'current', role:'current'
 };
 
 function normaliseCommand(raw) {
@@ -65,7 +84,8 @@ form.addEventListener('submit', e => {
   e.preventDefault();
   const raw = input.value.trim();
   if (!raw) return;
-  history.push(raw); historyIndex = history.length;
+  history.push(raw);
+  historyIndex = history.length;
   const key = normaliseCommand(raw);
 
   if (key === 'clear') {
