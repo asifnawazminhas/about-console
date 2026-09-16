@@ -1,15 +1,15 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Asif Nawaz Minhas — Offensive Security Specialist focused on penetration testing, red teaming, security research and purple teaming." />
-  <meta name="theme-color" content="#061018" />
-  <meta property="og:title" content="Asif Nawaz Minhas // Security Console" />
-  <meta property="og:description" content="Interactive cybersecurity profile covering offensive security, experience, skills, certifications, research and responsible disclosure." />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Asif Nawaz Minhas — Offensive Security Specialist focused on penetration testing, red teaming, vulnerability research and enterprise security." />
+  <meta name="theme-color" content="#041016" />
+  <meta property="og:title" content="Asif Nawaz Minhas // Offensive Security Console" />
+  <meta property="og:description" content="Interactive cybersecurity portfolio covering offensive security, experience, certifications, responsible disclosure and security projects." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://about.asifnawazminhas.com" />
-  <title>Asif Nawaz Minhas // Security Console</title>
+  <title>Asif Nawaz Minhas // Offensive Security Console</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,378 +17,238 @@
   <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
+  <div class="page-grid" aria-hidden="true"></div>
   <div class="scanlines" aria-hidden="true"></div>
 
-  <div class="shell">
+  <div class="app">
     <header class="topbar">
-      <div class="status-left">
-        <span class="status-dot"></span>
-        <strong>ASIF-SECURITY-CONSOLE</strong>
-        <span class="slash">//</span>
-        <span>PROFILE ONLINE</span>
+      <div class="brand">
+        <div class="brand-mark">AM</div>
+        <div>
+          <strong>ASIF NAWAZ MINHAS</strong>
+          <span>OFFENSIVE SECURITY SPECIALIST</span>
+        </div>
       </div>
-      <div class="status-right">
-        <span><small>FOCUS</small> OFFENSIVE SECURITY</span>
-        <span><small>LOCATION</small> NETHERLANDS</span>
-        <span><small>MODE</small> AUTHORISED ONLY</span>
-        <span><small>STATUS</small> ACTIVE</span>
+
+      <nav class="topnav" aria-label="Primary navigation">
+        <button class="nav-btn active" data-section="overview"><span>[ 01 ]</span> OVERVIEW</button>
+        <button class="nav-btn" data-section="experience"><span>[ 02 ]</span> EXPERIENCE</button>
+        <button class="nav-btn" data-section="skills"><span>[ 03 ]</span> SKILLS</button>
+        <button class="nav-btn" data-section="certifications"><span>[ 04 ]</span> CERTIFICATIONS</button>
+        <button class="nav-btn" data-section="academic"><span>[ 05 ]</span> ACADEMIC</button>
+        <button class="nav-btn" data-section="projects"><span>[ 06 ]</span> PROJECTS</button>
+        <button class="nav-btn" data-section="contact"><span>[ 07 ]</span> CONTACT</button>
+      </nav>
+
+      <div class="system-online">
+        <span class="pulse"></span>
+        <b>SYSTEMS ONLINE</b>
+        <small id="clock">--:--:--</small>
       </div>
     </header>
 
-    <nav class="tabs" aria-label="Primary navigation">
-      <button class="tab active" data-section="overview">Overview</button>
-      <button class="tab" data-section="experience">Experience</button>
-      <button class="tab" data-section="skills">Skills</button>
-      <button class="tab" data-section="certifications">Certifications</button>
-      <button class="tab" data-section="academic">Academic</button>
-      <button class="tab" data-section="recognition">Recognition</button>
-      <button class="tab" data-section="projects">Projects</button>
-      <button class="tab" data-section="contact">Contact</button>
-    </nav>
-
-    <main class="workspace">
-      <section class="content-panel">
+    <main class="layout">
+      <section class="dashboard">
+        <div class="corner tl"></div><div class="corner tr"></div><div class="corner bl"></div><div class="corner br"></div>
 
         <!-- OVERVIEW -->
-        <div id="overview" class="view active">
-          <div class="identity">
-            <div class="avatar-card">
-              <div class="avatar">AM</div>
-              <div class="avatar-ring"></div>
+        <section id="overview" class="panel-view active" aria-labelledby="overview-label">
+          <div class="hero">
+            <div class="profile-card">
+              <div class="portrait-placeholder">
+                <span>AM</span>
+              </div>
+              <div class="portrait-footer"><span class="pulse"></span> OPERATOR ONLINE</div>
             </div>
-            <div>
-              <span class="eyebrow">PROFILE // 0xASIF</span>
-              <h1>Asif Nawaz <em>Minhas</em></h1>
-              <h2>Offensive Security Specialist · Red Teaming · Penetration Testing</h2>
-              <p class="lead">
-                Offensive security practitioner with 10+ years of security testing experience across web applications,
-                infrastructure and enterprise environments, with a strong focus on practical validation, reporting,
-                remediation and responsible vulnerability research.
-              </p>
+
+            <div class="hero-copy">
+              <span id="overview-label" class="eyebrow">// ABOUT_ME</span>
+              <h1>ASIF NAWAZ <em>MINHAS</em></h1>
+              <h2>Offensive Security Specialist</h2>
+              <p class="hero-sub">Red Teaming <i>•</i> Penetration Testing <i>•</i> Vulnerability Research</p>
+
+              <div class="profile-narrative">
+                <p>I am an Offensive Security Specialist with more than 10 years of hands-on experience in penetration testing, red teaming, vulnerability research, and enterprise security assessments.</p>
+                <p>My background spans web application testing, Windows and Active Directory security, infrastructure assessments, and adversary simulation, with a focus on identifying high-impact weaknesses, validating real-world risk, and helping organisations strengthen their overall security posture.</p>
+                <p>I also contribute to the security research and responsible disclosure community, with more than 600 reported security issues and 68 CVEs. My work combines technical depth with clear reporting, remediation guidance, and knowledge sharing to turn offensive security findings into meaningful defensive improvements.</p>
+              </div>
+
               <div class="hero-actions">
-                <a href="https://www.asifnawazminhas.com" target="_blank" rel="noopener noreferrer">Main site</a>
-                <a href="https://notes.asifnawazminhas.com" target="_blank" rel="noopener noreferrer">Security Notes</a>
-                <a href="https://studio.asifnawazminhas.com" target="_blank" rel="noopener noreferrer" class="primary">Security Studio</a>
+                <a class="primary" href="https://notes.asifnawazminhas.com" target="_blank" rel="noopener noreferrer">SECURITY NOTES</a>
+                <a href="https://studio.asifnawazminhas.com" target="_blank" rel="noopener noreferrer">SECURITY STUDIO</a>
+                <a href="https://www.linkedin.com/in/asifminhasnl/" target="_blank" rel="noopener noreferrer">LINKEDIN</a>
               </div>
             </div>
           </div>
 
-          <div class="metric-grid">
-            <article><span>OFFSEC EXPERIENCE</span><b>10+ yrs</b><small>penetration testing & assessment</small></article>
-            <article><span>VULNERABILITY RESEARCH</span><b>68 CVEs</b><small>reported vulnerabilities</small></article>
-            <article><span>RESPONSIBLE DISCLOSURE</span><b>600+</b><small>security issues reported</small></article>
-            <article><span>CURRENT ROLE</span><b>Offensive Security</b><small>Specialist · Red Teaming · Pentesting</small></article>
+          <div class="stats-grid">
+            <article><div class="stat-icon">10+</div><div><b>10+ yrs</b><span>OffSec Experience</span><small>penetration testing & assessment</small></div></article>
+            <article><div class="stat-icon">68</div><div><b>68 CVEs</b><span>Reported Vulnerabilities</span><small>across multiple platforms</small></div></article>
+            <article><div class="stat-icon">600+</div><div><b>600+</b><span>Security Issues Reported</span><small>responsible disclosure</small></div></article>
+            <article><div class="stat-icon">OPS</div><div><b>Offensive Security</b><span>Current Role</span><small>specialist · red teaming · pentesting</small></div></article>
           </div>
 
-          <div class="decrypt-card profileNarrative">
-            <span class="card-label">OFFENSIVE SECURITY PROFILE</span>
-            <p>
-              I am an Offensive Security Specialist with more than 10 years of hands-on experience in penetration testing,
-              red teaming, vulnerability research, and enterprise security assessments.
-            </p>
-            <p>
-              My background spans web application testing, Windows and Active Directory security, infrastructure assessments,
-              and adversary simulation, with a focus on identifying high-impact weaknesses, validating real-world risk,
-              and helping organisations strengthen their overall security posture.
-            </p>
-            <p>
-              I also contribute to the security research and responsible disclosure community, with more than 600 reported
-              security issues and 68 CVEs. My work combines technical depth with clear reporting, remediation guidance,
-              and knowledge sharing to turn offensive security findings into meaningful defensive improvements.
-            </p>
-          </div>
-
-          <div class="card operations-card">
-            <span class="card-label">CORE PRACTICE AREAS</span>
-            <div class="ops-grid">
-              <article><b>Application Security</b><span>Web application testing, authentication, access control and input-handling weaknesses.</span></article>
-              <article><b>Enterprise Security</b><span>Windows, Active Directory, infrastructure and security-control assessments.</span></article>
-              <article><b>Red Teaming</b><span>Adversary simulation and realistic attack-path validation.</span></article>
-              <article><b>Research & Disclosure</b><span>Vulnerability research, coordinated disclosure and practical remediation guidance.</span></article>
-            </div>
-          </div>
-
-          <div class="card split-card">
-            <div>
-              <span class="card-label">OPERATING PRINCIPLES</span>
-              <div class="tag-cloud">
-                <span>Authorised testing</span><span>Evidence-driven</span><span>Repeatable methodology</span>
-                <span>Defensive value</span><span>Knowledge sharing</span><span>Responsible disclosure</span>
+          <div class="practice-shell">
+            <div class="section-head">
+              <div>
+                <span class="eyebrow">// CORE PRACTICE AREAS</span>
+                <p>A concise view of the domains I work across most often.</p>
               </div>
+              <span class="section-count">[ 04 AREAS ]</span>
             </div>
-            <div>
-              <span class="card-label">SECURITY HIGHLIGHTS</span>
-              <ul class="fact-list">
-                <li>Advanced offensive-security certifications</li>
-                <li>68 reported CVEs and 600+ responsible disclosures</li>
-                <li>Purple teaming, research and knowledge sharing</li>
-              </ul>
+
+            <div class="practice-grid">
+              <article class="practice-card">
+                <span class="practice-num">01</span>
+                <div class="practice-icon">⌗</div>
+                <div class="practice-copy"><h3>Application Security</h3><p>Web application testing covering authentication, access control and input-handling weaknesses.</p></div>
+                <span class="practice-arrow">→</span>
+              </article>
+              <article class="practice-card">
+                <span class="practice-num">02</span>
+                <div class="practice-icon">▤</div>
+                <div class="practice-copy"><h3>Enterprise Security</h3><p>Windows, Active Directory, infrastructure and security-control assessments.</p></div>
+                <span class="practice-arrow">→</span>
+              </article>
+              <article class="practice-card">
+                <span class="practice-num">03</span>
+                <div class="practice-icon">◎</div>
+                <div class="practice-copy"><h3>Red Teaming</h3><p>Adversary simulation and realistic attack-path validation.</p></div>
+                <span class="practice-arrow">→</span>
+              </article>
+              <article class="practice-card">
+                <span class="practice-num">04</span>
+                <div class="practice-icon">◫</div>
+                <div class="practice-copy"><h3>Research & Disclosure</h3><p>Vulnerability research, coordinated disclosure and practical remediation guidance.</p></div>
+                <span class="practice-arrow">→</span>
+              </article>
             </div>
           </div>
-        </div>
+
+          <div class="principles">
+            <span class="eyebrow">// OPERATING PRINCIPLES</span>
+            <div>
+              <span>Authorised testing</span>
+              <span>Evidence-driven</span>
+              <span>Repeatable methodology</span>
+              <span>Defensive value</span>
+              <span>Responsible disclosure</span>
+              <span>Knowledge sharing</span>
+            </div>
+          </div>
+        </section>
 
         <!-- EXPERIENCE -->
-        <div id="experience" class="view">
-          <div class="section-title">
-            <span class="eyebrow">CAREER // EXPERIENCE</span>
-            <h2>Security work that connects testing to outcomes.</h2>
+        <section id="experience" class="panel-view">
+          <div class="section-intro">
+            <span class="eyebrow">// OPERATION LOG</span>
+            <h2>Experience</h2>
+            <p>Security work spanning offensive assessment, enterprise environments, vulnerability research and earlier IT operations.</p>
           </div>
 
-          <div class="experience-list">
-            <article class="experience-card current">
-              <div class="experience-head">
-                <div>
-                  <span class="company">CURRENT ROLE</span>
-                  <h3>Offensive Security Specialist | Red Teaming | Penetration Testing</h3>
-                  <p>Netherlands · Hybrid</p>
-                </div>
-                <time>Feb 2024 — Present</time>
-              </div>
+          <div class="timeline">
+            <article class="timeline-card current">
+              <div class="timeline-meta"><span>CURRENT ROLE</span><time>Feb 2024 — Present</time></div>
+              <h3>Offensive Security Specialist | Red Teaming | Penetration Testing</h3>
+              <small>Netherlands · Hybrid</small>
               <ul>
                 <li>Conduct offensive security assessments across web applications, infrastructure and enterprise environments.</li>
                 <li>Perform authentication, access-control, injection, privilege-escalation and misconfiguration testing.</li>
-                <li>Support red-team-style engagements and realistic attacker simulations to evaluate defensive readiness.</li>
-                <li>Deliver clear technical reporting and practical remediation guidance to client stakeholders.</li>
+                <li>Support red-team-style engagements and realistic attacker simulation to evaluate defensive readiness.</li>
+                <li>Deliver technical reporting and practical remediation guidance to stakeholders.</li>
               </ul>
             </article>
 
-<article class="experience-card">
-              <div class="experience-head">
-                <div>
-                  <span class="company">Rijksoverheid</span>
-                  <h3>Penetration Tester / Ethical Hacker / Senior Cyber Security Specialist</h3>
-                  <p>Government security environments</p>
-                </div>
-                <time>Jun 2015 — Jan 2024</time>
-              </div>
+            <article class="timeline-card">
+              <div class="timeline-meta"><span>PUBLIC SECTOR SECURITY</span><time>Jun 2015 — Jan 2024</time></div>
+              <h3>Penetration Tester / Ethical Hacker / Senior Cyber Security Specialist</h3>
               <ul>
-                <li>Performed security assessments across government web applications, infrastructure and internal systems to identify and validate critical and high severity security vulnerabilities.</li>
-                <li>Conducted penetration testing covering authentication and authorisation, injection vulnerabilities, privilege escalation scenarios and configuration weaknesses.</li>
-                <li>Supported coordinated security improvement initiatives by collaborating with technical teams and validating remediation measures.</li>
-                <li>Participated in red-team-style simulations and adversary-emulation activities to evaluate detection, response and operational readiness.</li>
-                <li>Delivered technical reporting and risk-based remediation guidance supporting secure system development and long-term protection of public services and data.</li>
+                <li>Performed assessments across government web applications, infrastructure and internal systems.</li>
+                <li>Conducted penetration testing covering authentication, authorisation, injection, privilege escalation and configuration weaknesses.</li>
+                <li>Supported red-team-style simulations, remediation validation and risk-based reporting.</li>
               </ul>
             </article>
 
-            <div class="career-subhead"><span>CONCURRENT SECURITY & RESEARCH</span></div>
-
-            <article class="experience-card compact">
-              <div class="experience-head">
-                <div><span class="company">Dutch Institute for Vulnerability Disclosure (DIVD)</span><h3>Volunteer Security Researcher</h3></div>
-                <time>Feb 2022 — Mar 2026</time>
-              </div>
-              <p>Volunteer security research and responsible vulnerability disclosure activities.</p>
-            </article>
-
-            <article class="experience-card compact">
-              <div class="experience-head">
-                <div><span class="company">Hackpertise</span><h3>Owner · Self-employed</h3><p>Amsterdam, North Holland, Netherlands</p></div>
-                <time>Sep 2022 — Oct 2024</time>
-              </div>
-              <p>Independent cybersecurity work including technical writing, security requirements and security-focused consulting activities.</p>
-            </article>
-
-            <article class="experience-card compact">
-              <div class="experience-head">
-                <div><span class="company">purpleteaming.ai</span><h3>Co-Founder</h3><p>Netherlands</p></div>
-                <time>Apr 2023 — Feb 2024</time>
-              </div>
-              <p>Exploration of purple teaming and AI-oriented security concepts.</p>
-            </article>
-
-            <div class="career-subhead"><span>EARLIER CAREER</span></div>
-
-            <div class="career-grid">
-              <article><time>Aug 2014 — Jul 2015</time><b>Business Information Administrator</b><span>EDSN B.V. · Baarn</span><p>Application testing, issue analysis, customer requests, external system-integrator coordination and XML request analysis.</p></article>
-              <article><time>Sep 2013</time><b>Application Manager</b><span>Antoni van Leeuwenhoek</span><p>Application availability, ICT resource management, infrastructure security, releases and incident/problem diagnosis.</p></article>
-              <article><time>Sep 2012 — Aug 2013</time><b>Customer Service Executive 2</b><span>Tele2 Business · Diemen</span><p>Technical customer support, problem analysis and service communication.</p></article>
-              <article><time>Jul 2009 — Feb 2013</time><b>Security Guard</b><span>ASI Security, Inc.</span><p>Physical access control, visitor registration, emergency response, key management, safety rounds and reporting.</p></article>
-              <article><time>Jul 2011 — Dec 2011</time><b>Graduation Internship</b><span>Centric · IJsselstein</span><p>Research into the employability of mobile speech recognition in ambulatory care.</p></article>
-              <article><time>Sep 2010 — Jan 2011</time><b>Project Manager / Process Analyst Intern</b><span>Sociale Verzekeringsbank · Amstelveen</span><p>Analysed secretariat work processes and advised on process improvement.</p></article>
-              <article><time>Feb 2010 — Jun 2010</time><b>Project Member / Webdesigner Intern</b><span>VidiGo · Amsterdam</span><p>Web and project work during an internship placement.</p></article>
-              <article><time>Sep 2009 — Jan 2010</time><b>Project Member / PHP5 Programmer Intern</b><span>StoreInfo · Almere</span><p>Developed the mailing module of a CRM application used to search customer mailings.</p></article>
+            <div class="timeline-mini-grid">
+              <article><time>2022 — 2026</time><b>Volunteer Security Researcher</b><span>Responsible vulnerability research and disclosure.</span></article>
+              <article><time>2022 — 2024</time><b>Independent Security Work</b><span>Consulting, technical writing and security-focused projects.</span></article>
+              <article><time>2023 — 2024</time><b>Purple Teaming Initiative</b><span>Exploration of purple teaming and AI-oriented security concepts.</span></article>
+              <article><time>Earlier career</time><b>IT & Application Roles</b><span>Application management, business information administration, technical support and internships.</span></article>
             </div>
           </div>
-        </div>
+        </section>
 
         <!-- SKILLS -->
-        <div id="skills" class="view">
-          <div class="section-title">
-            <span class="eyebrow">CAPABILITY MATRIX // SKILLS</span>
-            <h2>Offensive security depth without arbitrary percentage scores.</h2>
-            <p class="section-copy">Skills are grouped by working area rather than self-rated percentages.</p>
+        <section id="skills" class="panel-view">
+          <div class="section-intro">
+            <span class="eyebrow">// CAPABILITY MATRIX</span>
+            <h2>Skills</h2>
+            <p>Grouped by working domain rather than arbitrary percentage scores.</p>
           </div>
-
-          <div class="skills-grid">
-            <article>
-              <span>01 // APPLICATION SECURITY</span>
-              <h3>Web & API Security</h3>
-              <div class="skill-tags">
-                <b>Authentication</b><b>Authorisation / IDOR / BOLA</b><b>Session Management</b><b>Injection Testing</b>
-                <b>SSRF</b><b>SSTI</b><b>Deserialization</b><b>File Upload</b><b>OAuth / OIDC</b><b>JWT</b><b>CORS / CSRF</b><b>API Security</b>
-              </div>
-            </article>
-            <article>
-              <span>02 // ENTERPRISE</span>
-              <h3>Windows, AD & Infrastructure</h3>
-              <div class="skill-tags">
-                <b>Windows Security</b><b>Active Directory</b><b>Privilege Escalation</b><b>PowerShell</b>
-                <b>Application Control</b><b>AppLocker</b><b>WDAC</b><b>Network Security</b><b>Linux</b><b>Enterprise Misconfiguration</b>
-              </div>
-            </article>
-            <article>
-              <span>03 // ADVERSARY SIMULATION</span>
-              <h3>Red & Purple Teaming</h3>
-              <div class="skill-tags">
-                <b>Adversary Simulation</b><b>Red Team Methodology</b><b>Attack Path Analysis</b><b>Detection Validation</b>
-                <b>Telemetry Mapping</b><b>ATT&CK Mapping</b><b>Purple Team Exercises</b><b>Knowledge Transfer</b>
-              </div>
-            </article>
-            <article>
-              <span>04 // RESEARCH</span>
-              <h3>Vulnerability Research</h3>
-              <div class="skill-tags">
-                <b>Responsible Disclosure</b><b>Vulnerability Validation</b><b>Root Cause Analysis</b><b>CVE Research</b>
-                <b>Proof of Concept Validation</b><b>Security Research</b><b>Technical Writing</b>
-              </div>
-            </article>
-            <article>
-              <span>05 // ENGINEERING</span>
-              <h3>Tooling & Automation</h3>
-              <div class="skill-tags">
-                <b>Burp Suite</b><b>Nmap</b><b>PowerShell</b><b>Python</b><b>Git</b><b>Linux Tooling</b>
-                <b>Command-line Workflows</b><b>Security Automation</b><b>Source Review</b>
-              </div>
-            </article>
-            <article>
-              <span>06 // COMMUNICATION</span>
-              <h3>Reporting & Remediation</h3>
-              <div class="skill-tags">
-                <b>Technical Reporting</b><b>Risk Communication</b><b>Stakeholder Communication</b><b>Remediation Guidance</b>
-                <b>Retesting</b><b>Security Governance</b><b>Knowledge Sharing</b>
-              </div>
-            </article>
+          <div class="matrix-grid">
+            <article><span>01</span><h3>Application Security</h3><div><b>Authentication</b><b>Authorisation</b><b>Injection</b><b>Business Logic</b><b>File Upload</b><b>OAuth/OIDC</b><b>JWT</b></div></article>
+            <article><span>02</span><h3>Windows & Active Directory</h3><div><b>AD Security</b><b>Privilege Escalation</b><b>PowerShell</b><b>AppLocker</b><b>WDAC</b><b>Windows Hardening</b></div></article>
+            <article><span>03</span><h3>Red & Purple Teaming</h3><div><b>Adversary Simulation</b><b>Attack Paths</b><b>Detection Validation</b><b>ATT&CK Mapping</b><b>Telemetry</b></div></article>
+            <article><span>04</span><h3>Research & Disclosure</h3><div><b>CVE Research</b><b>Responsible Disclosure</b><b>Root Cause Analysis</b><b>PoC Validation</b></div></article>
+            <article><span>05</span><h3>Tooling</h3><div><b>Burp Suite</b><b>Nmap</b><b>PowerShell</b><b>Python</b><b>Git</b><b>Linux</b></div></article>
+            <article><span>06</span><h3>Reporting & Remediation</h3><div><b>Technical Reporting</b><b>Risk Communication</b><b>Retesting</b><b>Remediation Guidance</b><b>Knowledge Sharing</b></div></article>
           </div>
-
-          <div class="card skill-note">
-            <span class="card-label">WORKING STYLE</span>
-            <p>My focus is on validated findings, clear evidence, reproducible testing, realistic risk and actionable remediation rather than inflated capability scores.</p>
-          </div>
-        </div>
+        </section>
 
         <!-- CERTIFICATIONS -->
-        <div id="certifications" class="view">
-          <div class="section-title">
-            <span class="eyebrow">CLEARANCE // CERTIFICATIONS</span>
-            <h2>Hands-on offensive security, security engineering and governance.</h2>
+        <section id="certifications" class="panel-view">
+          <div class="section-intro">
+            <span class="eyebrow">// SECURITY CLEARANCE</span>
+            <h2>Certifications</h2>
+            <p>Hands-on offensive security, governance and methodology credentials.</p>
           </div>
-
-          <div class="cert-sections">
-            <div class="cert-section">
-              <span class="cert-section-title">OFFENSIVE SECURITY</span>
-              <div class="cert-grid">
-                <article><div><b>OSEP</b><span>OffSec Experienced Penetration Tester</span></div><small>2026 · GRANTED</small></article>
-                <article><div><b>OSCP</b><span>OffSec Certified Professional</span></div><small>2023 · GRANTED</small></article>
-                <article><div><b>OSWP</b><span>OffSec Wireless Professional</span></div><small>2026 · GRANTED</small></article>
-                <article><div><b>OSWA</b><span>OffSec Web Assessor</span></div><small>GRANTED</small></article>
-                <article><div><b>CRTO</b><span>Certified Red Team Operator</span></div><small>2025 · GRANTED</small></article>
-                <article><div><b>CRTP</b><span>Certified Red Team Professional</span></div><small>GRANTED</small></article>
-              </div>
-            </div>
-
-            <div class="cert-section">
-              <span class="cert-section-title">SECURITY GOVERNANCE & METHODOLOGY</span>
-              <div class="cert-grid">
-                <article><div><b>CISSP</b><span>Certified Information Systems Security Professional</span></div><small>GRANTED</small></article>
-                <article><div><b>CISM</b><span>Certified Information Security Manager</span></div><small>GRANTED</small></article>
-                <article><div><b>APTMC</b><span>ATT&CK Purple Teaming Methodology Certification</span></div><small>GRANTED</small></article>
-                <article><div><b>CEH</b><span>Certified Ethical Hacker</span></div><small>GRANTED</small></article>
-              </div>
-            </div>
+          <div class="cert-grid">
+            <article><b>OSEP</b><span>OffSec Experienced Penetration Tester</span><small>GRANTED</small></article>
+            <article><b>OSCP</b><span>OffSec Certified Professional</span><small>GRANTED</small></article>
+            <article><b>OSWP</b><span>OffSec Wireless Professional</span><small>GRANTED</small></article>
+            <article><b>OSWA</b><span>OffSec Web Assessor</span><small>GRANTED</small></article>
+            <article><b>CRTO</b><span>Certified Red Team Operator</span><small>GRANTED</small></article>
+            <article><b>CRTP</b><span>Certified Red Team Professional</span><small>GRANTED</small></article>
+            <article><b>CISSP</b><span>Certified Information Systems Security Professional</span><small>GRANTED</small></article>
+            <article><b>CISM</b><span>Certified Information Security Manager</span><small>GRANTED</small></article>
+            <article><b>APTMC</b><span>ATT&CK Purple Teaming Methodology Certification</span><small>GRANTED</small></article>
+            <article><b>CEH</b><span>Certified Ethical Hacker</span><small>GRANTED</small></article>
           </div>
-
-          <div class="card challenge-card">
-            <span class="card-label">AI SECURITY CHALLENGE</span>
-            <p>Prompt Airlines by WIZ — AI Security Certificate challenge.</p>
-          </div>
-        </div>
+        </section>
 
         <!-- ACADEMIC -->
-        <div id="academic" class="view">
-          <div class="section-title">
-            <span class="eyebrow">ACADEMIC // BACKGROUND</span>
-            <h2>Security practice backed by formal study and research.</h2>
+        <section id="academic" class="panel-view">
+          <div class="section-intro">
+            <span class="eyebrow">// ACADEMIC BACKGROUND</span>
+            <h2>Education</h2>
+            <p>Formal study supporting practical security experience.</p>
           </div>
           <div class="academic-grid">
-            <article>
-              <span>2016–2020</span>
-              <b>Master's Degree — Information Security</b>
-              <p>Royal Holloway, University of London</p>
-            </article>
-            <article>
-              <span>2008–2011</span>
-              <b>Bachelor's Degree — Information Technology</b>
-              <p>Windesheim University of Applied Sciences</p>
-            </article>
-</div>
-        </div>
-
-        <!-- RECOGNITION -->
-        <div id="recognition" class="view">
-          <div class="section-title recognition-head">
-            <div>
-              <span class="eyebrow">INTEL // RESPONSIBLE DISCLOSURE</span>
-              <h2>Security contributions acknowledged internationally.</h2>
-            </div>
-            <div class="recognition-metric"><b>68</b><span>CVEs reported</span></div>
+            <article><span>MASTER'S</span><h3>Information Security</h3><p>Royal Holloway, University of London</p></article>
+            <article><span>BACHELOR'S</span><h3>Information Technology</h3><p>Windesheim University of Applied Sciences</p></article>
           </div>
-          <div class="recognition-list">
-            <article><span>2026</span><b>Utrecht University</b><small>Responsible disclosure recognition</small></article>
-            <article><span>2025</span><b>UNICEF</b><small>Information Security Hall of Fame</small></article>
-            <article><span>2025</span><b>BASF</b><small>Heroes of BASF</small></article>
-            <article><span>2025</span><b>TU Delft</b><small>Hall of Fame</small></article>
-            <article><span>2025</span><b>KNAW</b><small>Hall of Fame</small></article>
-            <article><span>2025</span><b>Vrije Universiteit Amsterdam</b><small>Responsible disclosure recognition</small></article>
-            <article><span>2025</span><b>Stedin</b><small>Responsible disclosure Hall of Fame</small></article>
-            <article><span>2025</span><b>Club Brugge</b><small>Hall of Fame</small></article>
-            <article><span>2024</span><b>United Nations</b><small>Hall of Fame</small></article>
-            <article><span>2024</span><b>World Health Organization</b><small>Hall of Fame</small></article>
-            <article><span>2024</span><b>UNESCO</b><small>Hall of Fame</small></article>
-            <article><span>2024</span><b>Schiphol Amsterdam Airport</b><small>Hall of Fame</small></article>
-            <article><span>2024</span><b>NPO</b><small>Wall of Fame</small></article>
-            <article><span>2024</span><b>Inholland & Fontys</b><small>Higher-education security recognition</small></article>
-            <article><span>2023</span><b>NASA VDP</b><small>Hall of Fame + letter of appreciation</small></article>
-            <article><span>2023</span><b>Wordfence</b><small>Researcher Hall of Fame</small></article>
-          </div>
-        </div>
+        </section>
 
         <!-- PROJECTS -->
-        <div id="projects" class="view">
-          <div class="section-title">
-            <span class="eyebrow">PROJECTS // SECURITY KNOWLEDGE</span>
-            <h2>Documentation, interactive tooling and research.</h2>
+        <section id="projects" class="panel-view">
+          <div class="section-intro">
+            <span class="eyebrow">// PROJECT INVENTORY</span>
+            <h2>Projects</h2>
+            <p>Security knowledge, interactive tooling and technical writing.</p>
           </div>
           <div class="project-grid">
-            <a href="https://studio.asifnawazminhas.com" target="_blank" rel="noopener noreferrer">
-              <span>01</span><b>Security Studio</b><p>Interactive security assessment workspace, command visualisation, ATT&CK context, findings and reporting.</p>
-            </a>
-            <a href="https://notes.asifnawazminhas.com" target="_blank" rel="noopener noreferrer">
-              <span>02</span><b>Security Notes</b><p>Technical notes covering penetration testing, red teaming, Windows, Active Directory, web security and tooling.</p>
-            </a>
-            <a href="https://www.asifnawazminhas.com" target="_blank" rel="noopener noreferrer">
-              <span>03</span><b>Research & Writing</b><p>Cybersecurity articles, technical security research and selected academic work.</p>
-            </a>
-            <a href="https://www.asifnawazminhas.com/about/" target="_blank" rel="noopener noreferrer">
-              <span>04</span><b>Public Profile</b><p>Academic background, certification references, vulnerability disclosure achievements and recent writing.</p>
-            </a>
+            <a href="https://studio.asifnawazminhas.com" target="_blank" rel="noopener noreferrer"><span>01</span><h3>Security Studio</h3><p>Interactive security assessment workspace, command visualisation, ATT&CK context, findings and reporting.</p><b>OPEN →</b></a>
+            <a href="https://notes.asifnawazminhas.com" target="_blank" rel="noopener noreferrer"><span>02</span><h3>Security Notes</h3><p>Technical notes covering penetration testing, red teaming, Windows, Active Directory, web security and tooling.</p><b>OPEN →</b></a>
+            <a href="https://www.asifnawazminhas.com" target="_blank" rel="noopener noreferrer"><span>03</span><h3>Main Site</h3><p>Cybersecurity articles, write-ups and professional portfolio content.</p><b>OPEN →</b></a>
           </div>
-        </div>
+        </section>
 
         <!-- CONTACT -->
-        <div id="contact" class="view">
-          <div class="section-title">
-            <span class="eyebrow">COMMS // CONTACT</span>
-            <h2>Connect through my public profiles.</h2>
+        <section id="contact" class="panel-view">
+          <div class="section-intro">
+            <span class="eyebrow">// COMMS</span>
+            <h2>Contact</h2>
+            <p>Use my public profiles to connect.</p>
           </div>
           <div class="contact-grid">
             <a href="https://www.linkedin.com/in/asifminhasnl/" target="_blank" rel="noopener noreferrer"><b>LinkedIn</b><span>Professional profile</span></a>
@@ -396,38 +256,67 @@
             <a href="https://notes.asifnawazminhas.com" target="_blank" rel="noopener noreferrer"><b>Security Notes</b><span>Technical knowledge base</span></a>
             <a href="https://studio.asifnawazminhas.com" target="_blank" rel="noopener noreferrer"><b>Security Studio</b><span>Interactive security workspace</span></a>
           </div>
-        </div>
+        </section>
       </section>
 
-      <aside class="terminal-panel">
-        <div class="terminal-title">
-          <span>ASIF-SHELL v1.5 // INFORMATIONAL</span>
-          <div><i></i><i></i><i></i></div>
-        </div>
-        <div class="terminal-output" id="terminalOutput" aria-live="polite">
-          <pre class="ascii">
-   ___        _  __
-  / _ | ___  (_)/ _|
- / __ |(_-< / / __/
-/_/ |_/___//_/_/
+      <aside class="terminal-column">
+        <div class="terminal">
+          <div class="terminal-head">
+            <span>ASIF-SHELL v1.6.0</span>
+            <span class="online"><i></i> ONLINE</span>
+          </div>
+          <div class="terminal-body" id="terminalOutput">
+            <pre class="ascii">
+    ___        _  __
+   / _ | ___  (_)/ _|
+  / __ |(_-< / / __/
+ /_/ |_/___//_/_/
 
-security profile console
-          </pre>
-          <p>Welcome to Asif Security Console.</p>
-          <p>Type <strong>help</strong> to list available commands.</p>
-          <p class="muted">Informational terminal only. Commands are matched locally and never executed.</p>
+OFFENSIVE SECURITY CONSOLE
+            </pre>
+            <p>Welcome to Asif Security Console.</p>
+            <p>Type <b>help</b> to see available commands.</p>
+            <div class="term-block">
+              <span class="cmd">asif@console:~$</span> help
+              <div class="command-list">
+                <span><b>about</b> — profile information</span>
+                <span><b>experience</b> — work experience</span>
+                <span><b>skills</b> — capability areas</span>
+                <span><b>certs</b> — certifications</span>
+                <span><b>academic</b> — education</span>
+                <span><b>projects</b> — selected projects</span>
+                <span><b>contact</b> — public contact links</span>
+                <span><b>clear</b> — clear terminal</span>
+              </div>
+            </div>
+          </div>
+          <form class="terminal-input" id="terminalForm">
+            <span>asif@console:~$</span>
+            <input id="terminalInput" autocomplete="off" spellcheck="false" placeholder="type a command..." aria-label="Terminal command" />
+          </form>
         </div>
-        <form class="terminal-input" id="terminalForm">
-          <span>›</span>
-          <input id="terminalInput" autocomplete="off" spellcheck="false" aria-label="Terminal command" placeholder="type a command..." />
-        </form>
-        <div class="terminal-hints"><span>↑↓ history</span><span>Tab autocomplete</span><span>help for commands</span></div>
+
+        <div class="recent-card">
+          <div class="side-title"><span>// RECENT ACTIVITY</span><small>PUBLIC MILESTONES</small></div>
+          <ul>
+            <li><time>Sep 2026</time><span>Expanded Security Notes and Security Studio</span></li>
+            <li><time>Jul 2026</time><span>Completed OSWP</span></li>
+            <li><time>Jun 2026</time><span>Completed OSEP</span></li>
+            <li><time>2025</time><span>Completed CRTO</span></li>
+          </ul>
+        </div>
+
+        <div class="quote-card">
+          <span>“</span>
+          <blockquote>Security improves when offensive findings become practical defensive knowledge.</blockquote>
+          <small>— ASIF NAWAZ MINHAS</small>
+        </div>
       </aside>
     </main>
 
     <footer>
-      <span>© <span id="year"></span> Asif Nawaz Minhas</span>
-      <span>authorised security testing · research · knowledge sharing</span>
+      <span>© <span id="year"></span> ASIF NAWAZ MINHAS</span>
+      <span>OFFSEC&nbsp;&nbsp;|&nbsp;&nbsp;RESEARCH&nbsp;&nbsp;|&nbsp;&nbsp;KNOWLEDGE&nbsp;&nbsp;|&nbsp;&nbsp;COMMUNITY</span>
     </footer>
   </div>
 

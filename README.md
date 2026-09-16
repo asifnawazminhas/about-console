@@ -6,44 +6,40 @@ Interactive terminal-style cybersecurity portfolio for Asif Nawaz Minhas.
 
 https://about.asifnawazminhas.com
 
-## v1.5 highlights
+## v1.6 redesign
 
-- Employer-specific current-role details removed from the public console; LinkedIn remains the source for current employment history
-- Full career history and concurrent security/research roles
-- Dedicated Skills / Capability Matrix tab
-- Expanded certifications with granted status
-- Improved Overview with:
-  - Initializing Decrypt Sequence
-  - Current Operations
-  - security highlights
-- Terminal commands for current role, career, skills, certifications and experience
-- Arrow-key history and Tab autocomplete
-- Static, local-only informational terminal
-- No backend
-- No uploads
-- No command execution
+This release rebuilds the homepage into a two-panel cyber-console layout:
 
-## Main terminal commands
+- left-side interactive portfolio dashboard
+- right-side informational ASIF-SHELL
+- premium cyber HUD navigation
+- responsive overview hero
+- four polished Core Practice Area cards
+- experience, skills, certifications, education, projects and contact panels
+- public milestone / recent-activity panel
+- employer-neutral current role
+- local informational terminal with command history and Tab completion
+- no file uploads
+- no backend
+- no system command execution
+
+## Terminal commands
 
 ```text
 help
 about
-current
-career
 experience
 skills
 certs
-education
-recognition
-cves
+academic
 projects
+contact
 links
 whoami
-recent
 clear
 ```
 
-## Related sites
+## Public links
 
 - Main site: https://www.asifnawazminhas.com
 - Security Notes: https://notes.asifnawazminhas.com
@@ -51,50 +47,32 @@ clear
 - GitHub: https://github.com/asifnawazminhas
 - LinkedIn: https://www.linkedin.com/in/asifminhasnl/
 
+## Personal photo
+
+The release intentionally ships with an `AM` monogram rather than inventing a photograph.
+
+To use your own photo later, add your image under `assets/` and replace the `.portrait-placeholder`
+content in `index.html` with an `<img>` element.
+
 ## GitHub Pages
 
-This repository includes `.github/workflows/deploy.yml`.
+The repository includes:
+
+```text
+.github/workflows/deploy.yml
+CNAME
+```
 
 Use:
 
 **Settings -> Pages -> Source -> GitHub Actions**
 
-The included `CNAME` is configured for:
+The custom domain is:
 
-`about.asifnawazminhas.com`
+```text
+about.asifnawazminhas.com
+```
 
 ## License
 
 MIT License.
-
-### v1.3 privacy and design changes
-
-- Removed current employer naming from the public About Console
-- Removed the Current Research card
-- Removed terminal aliases exposing the current employer/current role
-- Career overview remains high-level while LinkedIn carries detailed employment history
-- Upgraded typography to Manrope + IBM Plex Mono with system fallbacks
-- Refined spacing, surfaces, card depth, hover states and terminal styling
-- Improved visual hierarchy and responsive polish
-
-### v1.4 typography and density changes
-
-- Restored the current role in employer-neutral form
-- Current employer remains intentionally omitted
-- Reintroduced the `current` terminal command without employer naming
-- Reduced Overview copy substantially
-- Replaced long Current Operations list with four compact operation cards
-- Switched the primary UI typeface to Space Grotesk
-- Kept IBM Plex Mono for terminal and technical labels
-- Increased whitespace, card padding and line-height
-- Simplified Security Highlights
-- Improved visual hierarchy and readability
-
-### v1.5 profile update
-
-- Replaced the short feature-style overview copy with the approved professional narrative
-- Added an employer-neutral Offensive Security Profile section
-- Reworked Current Operations into four clearer Core Practice Areas
-- Added a `profile` terminal command
-- Retained current role without naming the employer
-- Preserved the premium Space Grotesk + IBM Plex Mono design system
