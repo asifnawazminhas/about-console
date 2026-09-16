@@ -6,9 +6,9 @@ Interactive terminal-style cybersecurity portfolio for Asif Nawaz Minhas.
 
 https://about.asifnawazminhas.com
 
-## v1.2 highlights
+## v1.3 highlights
 
-- Expanded current SEQRIT role with complete offensive-security responsibilities
+- Employer-specific current-role details removed from the public console; LinkedIn remains the source for current employment history
 - Full career history and concurrent security/research roles
 - Dedicated Skills / Capability Matrix tab
 - Expanded certifications with granted status
@@ -66,3 +66,13 @@ The included `CNAME` is configured for:
 ## License
 
 MIT License.
+
+### v1.3 privacy and design changes
+
+- Removed current employer naming from the public About Console
+- Removed the Current Research card
+- Removed terminal aliases exposing the current employer/current role
+- Career overview remains high-level while LinkedIn carries detailed employment history
+- Upgraded typography to Manrope + IBM Plex Mono with system fallbacks
+- Refined spacing, surfaces, card depth, hover states and terminal styling
+- Improved visual hierarchy and responsive polish
