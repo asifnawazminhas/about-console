@@ -6,17 +6,19 @@ Interactive terminal-style cybersecurity portfolio for Asif Nawaz Minhas.
 
 https://about.asifnawazminhas.com
 
-## v1.6 redesign
+## v1.7 refinement
 
-This release rebuilds the homepage into a two-panel cyber-console layout:
+This release refines the two-panel cyber-console layout:
 
 - left-side interactive portfolio dashboard
+- improved terminal responses: commands now print a concise summary and open the matching left-side panel
 - right-side informational ASIF-SHELL
 - premium cyber HUD navigation
 - responsive overview hero
 - four polished Core Practice Area cards
 - experience, skills, certifications, education, projects and contact panels
 - public milestone / recent-activity panel
+- quote updated to “Security improves through testing, learning, and sharing.”
 - employer-neutral current role
 - local informational terminal with command history and Tab completion
 - no file uploads

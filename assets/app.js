@@ -32,12 +32,56 @@ const terminalCommands = {
       </div>
     </div>`,
   about: () => `<div class="term-block"><span class="cmd">Asif Nawaz Minhas</span><div>Offensive Security Specialist · Red Teaming · Penetration Testing · Vulnerability Research</div><div>10+ years of hands-on offensive-security experience · 68 CVEs · 600+ responsible disclosures.</div></div>`,
-  experience: () => { openSection('experience'); return `<div class="term-block"><span class="cmd">Experience panel opened.</span></div>`; },
-  skills: () => { openSection('skills'); return `<div class="term-block"><span class="cmd">Skills panel opened.</span></div>`; },
-  certs: () => { openSection('certifications'); return `<div class="term-block"><span class="cmd">Certifications panel opened.</span><div>OSEP · OSCP · OSWP · OSWA · CRTO · CRTP · CISSP · CISM · APTMC · CEH</div></div>`; },
-  academic: () => { openSection('academic'); return `<div class="term-block"><span class="cmd">Academic panel opened.</span></div>`; },
-  projects: () => { openSection('projects'); return `<div class="term-block"><span class="cmd">Projects panel opened.</span></div>`; },
-  contact: () => { openSection('contact'); return `<div class="term-block"><span class="cmd">Contact panel opened.</span></div>`; },
+  experience: () => {
+    openSection('experience');
+    return `<div class="term-block">
+      <span class="cmd">EXPERIENCE</span>
+      <div>10+ years across penetration testing, red teaming, enterprise security and vulnerability research.</div>
+      <div>Current focus: offensive security assessments, adversary simulation, technical reporting and remediation validation.</div>
+      <div style="color:var(--accent)">→ Experience panel opened on the left.</div>
+    </div>`;
+  },
+  skills: () => {
+    openSection('skills');
+    return `<div class="term-block">
+      <span class="cmd">CAPABILITY MATRIX</span>
+      <div>Application Security · Windows & Active Directory · Red Teaming · Vulnerability Research · Tooling · Reporting</div>
+      <div style="color:var(--accent)">→ Skills panel opened on the left.</div>
+    </div>`;
+  },
+  certs: () => {
+    openSection('certifications');
+    return `<div class="term-block">
+      <span class="cmd">CERTIFICATIONS</span>
+      <div>OSEP · OSCP · OSWP · OSWA · CRTO · CRTP · CISSP · CISM · APTMC · CEH</div>
+      <div style="color:var(--accent)">→ Certifications panel opened on the left.</div>
+    </div>`;
+  },
+  academic: () => {
+    openSection('academic');
+    return `<div class="term-block">
+      <span class="cmd">ACADEMIC BACKGROUND</span>
+      <div>Master's in Information Security · Royal Holloway, University of London</div>
+      <div>Bachelor's in Information Technology · Windesheim University of Applied Sciences</div>
+      <div style="color:var(--accent)">→ Academic panel opened on the left.</div>
+    </div>`;
+  },
+  projects: () => {
+    openSection('projects');
+    return `<div class="term-block">
+      <span class="cmd">PROJECTS</span>
+      <div>Security Studio · Security Notes · Main cybersecurity site</div>
+      <div style="color:var(--accent)">→ Projects panel opened on the left.</div>
+    </div>`;
+  },
+  contact: () => {
+    openSection('contact');
+    return `<div class="term-block">
+      <span class="cmd">CONTACT</span>
+      <div>LinkedIn · GitHub · Security Notes · Security Studio</div>
+      <div style="color:var(--accent)">→ Contact panel opened on the left.</div>
+    </div>`;
+  },
   links: () => `<div class="term-block"><a href="https://github.com/asifnawazminhas" target="_blank" rel="noopener noreferrer">GitHub</a><br><a href="https://www.linkedin.com/in/asifminhasnl/" target="_blank" rel="noopener noreferrer">LinkedIn</a><br><a href="https://notes.asifnawazminhas.com" target="_blank" rel="noopener noreferrer">Security Notes</a><br><a href="https://studio.asifnawazminhas.com" target="_blank" rel="noopener noreferrer">Security Studio</a></div>`,
   whoami: () => `<div class="term-block"><span class="cmd">asif@console</span> authorised-user</div>`,
   clear: () => ''
