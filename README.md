@@ -6,7 +6,7 @@ Interactive terminal-style cybersecurity portfolio for Asif Nawaz Minhas.
 
 https://about.asifnawazminhas.com
 
-## v1.4 highlights
+## v1.5 highlights
 
 - Employer-specific current-role details removed from the public console; LinkedIn remains the source for current employment history
 - Full career history and concurrent security/research roles
@@ -89,3 +89,12 @@ MIT License.
 - Increased whitespace, card padding and line-height
 - Simplified Security Highlights
 - Improved visual hierarchy and readability
+
+### v1.5 profile update
+
+- Replaced the short feature-style overview copy with the approved professional narrative
+- Added an employer-neutral Offensive Security Profile section
+- Reworked Current Operations into four clearer Core Practice Areas
+- Added a `profile` terminal command
+- Retained current role without naming the employer
+- Preserved the premium Space Grotesk + IBM Plex Mono design system

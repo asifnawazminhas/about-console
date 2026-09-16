@@ -599,3 +599,52 @@ p{
 @media(max-width:850px){
   .ops-grid,.split-card{grid-template-columns:1fr!important}
 }
+
+
+/* ==========================================================
+   v1.5 - Approved professional profile narrative
+   ========================================================== */
+.profileNarrative{
+  position:relative;
+  overflow:hidden;
+  padding:25px 26px 24px!important;
+}
+.profileNarrative::after{
+  content:'';
+  position:absolute;
+  right:-90px;
+  top:-90px;
+  width:220px;
+  height:220px;
+  border-radius:50%;
+  background:radial-gradient(circle,rgba(0,223,247,.07),transparent 68%);
+  pointer-events:none;
+}
+.profileNarrative .card-label{
+  display:inline-flex;
+  margin-bottom:14px;
+  color:var(--accent);
+}
+.profileNarrative p{
+  position:relative;
+  z-index:1;
+  max-width:930px;
+  color:#9ab0ba!important;
+  font-size:12.4px!important;
+  line-height:1.72!important;
+  margin:0 0 12px!important;
+}
+.profileNarrative p:last-child{margin-bottom:0!important}
+.operations-card .card-label{display:block;margin-bottom:12px}
+.ops-grid article b{
+  font-size:12.5px!important;
+  letter-spacing:-.02em;
+}
+.ops-grid article span{
+  font-size:9.3px!important;
+  line-height:1.55!important;
+}
+@media(max-width:760px){
+  .profileNarrative{padding:20px!important}
+  .profileNarrative p{font-size:12px!important}
+}
