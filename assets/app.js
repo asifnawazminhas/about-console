@@ -25,6 +25,7 @@ const terminalCommands = {
         <span><b>certs</b> — open certifications</span>
         <span><b>academic</b> — open education</span>
         <span><b>research</b> — vulnerability research</span>
+        <span><b>recognition</b> — disclosure achievements</span>
         <span><b>projects</b> — open projects</span>
         <span><b>contact</b> — open contact</span>
         <span><b>links</b> — public links</span>
@@ -54,7 +55,7 @@ const terminalCommands = {
     openSection('certifications');
     return `<div class="term-block">
       <span class="cmd">CERTIFICATIONS</span>
-      <div>OSEP · OSCP · OSWP · OSWA · CRTO · CRTP · CISSP · CISM · APTMC · CEH</div>
+      <div>OSEP · OSCP · OSWP · OSWA · CRTO · CRTP · CISSP · CISM · APTMC</div>
       <div style="color:var(--accent)">→ Certifications panel opened on the left.</div>
     </div>`;
   },
@@ -77,6 +78,15 @@ const terminalCommands = {
       <div style="color:var(--accent)">→ Research panel opened on the left.</div>
     </div>`;
   },
+  recognition: () => {
+    openSection('recognition');
+    return `<div class="term-block">
+      <span class="cmd">DISCLOSURE RECOGNITION</span>
+      <div>26 public acknowledgements across 2023 — 2026.</div>
+      <div>NASA · United Nations · WHO · UNESCO · UNICEF · BASF · Schiphol · TU Delft · KNAW · VU · UU · and others.</div>
+      <div style="color:var(--accent)">→ Recognition panel opened on the left.</div>
+    </div>`;
+  },
   projects: () => {
     openSection('projects');
     return `<div class="term-block">
@@ -89,7 +99,7 @@ const terminalCommands = {
     openSection('contact');
     return `<div class="term-block">
       <span class="cmd">PUBLIC CHANNELS</span>
-      <div>GitHub · LinkedIn · Security Notes · Security Studio · Main Site · Research Profile</div>
+      <div>GitHub · LinkedIn · Security Notes · Security Studio · Main Site · OpenBugBounty · Research Profile</div>
       <div>No email or contact form is exposed on this console.</div>
       <div style="color:var(--accent)">→ Contact panel opened on the left.</div>
     </div>`;
@@ -102,7 +112,7 @@ const terminalCommands = {
 const aliases = {
   certification:'certs', certifications:'certs', cert:'certs',
   education:'academic', edu:'academic', project:'projects', link:'links',
-  exp:'experience', work:'experience', cve:'research', cves:'research', disclosure:'research'
+  exp:'experience', work:'experience', cve:'research', cves:'research', disclosure:'research', achievements:'recognition', achievement:'recognition', halloffame:'recognition', openbug:'recognition'
 };
 
 function normalise(raw) {

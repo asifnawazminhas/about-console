@@ -6,7 +6,7 @@ Interactive terminal-style cybersecurity portfolio for Asif Nawaz Minhas.
 
 https://about.asifnawazminhas.com
 
-## v1.8 research + comms update
+## v2.0 recognition update
 
 This release expands the cyber-console portfolio with public research and communication modules:
 
@@ -94,3 +94,31 @@ MIT License.
 - no email address or non-functional contact form
 - `research`, `cve`, `cves`, and `disclosure` terminal commands / aliases
 - image placeholder retained for a later portrait update
+
+
+### v1.9 fix
+
+GitHub Pages / browser / CDN caching could leave `style.css` and `app.js` on the previous
+release while the new HTML was already deployed. That caused the Research and Contact
+sections to render as mostly unstyled HTML.
+
+v1.9 explicitly versions both static assets:
+
+```text
+assets/style.css?v=1.9.0
+assets/app.js?v=1.9.0
+```
+
+This forces clients and intermediary caches to fetch the matching CSS and JavaScript release.
+
+
+### v2.0 additions
+
+- Recognition tab with 26 public vulnerability-disclosure acknowledgements
+- direct public source links for every recognition
+- OpenBugBounty added as a separate public channel
+- Netherlands location now shows the 🇳🇱 flag
+- CEH removed from the displayed certification set
+- recognition / achievements / halloffame terminal commands
+- static asset cache busting updated to v2.0.0
+- portrait placeholder retained for the final image update
