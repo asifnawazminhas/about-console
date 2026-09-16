@@ -17,7 +17,7 @@ const history = [];
 let historyIndex = 0;
 
 const commandNames = [
-  'help','about','career','experience','skills','certs','education',
+  'help','about','current','career','experience','skills','certs','education',
   'recognition','cves','projects','links','whoami','recent','clear'
 ];
 
@@ -27,6 +27,7 @@ const commands = {
   <div class="term-success">Available commands</div>
   <div class="term-list">
     <div><b>about</b> <span class="term-dim">profile summary</span></div>
+    <div><b>current</b> <span class="term-dim">current role</span></div>
     <div><b>career</b> <span class="term-dim">career overview</span></div>
     <div><b>skills</b> <span class="term-dim">security capability areas</span></div>
     <div><b>certs</b> <span class="term-dim">certifications</span></div>
@@ -41,6 +42,7 @@ const commands = {
   </div>
 </div>`,
   about: () => `<div class="term-block"><div class="term-success">Asif Nawaz Minhas</div><div>Offensive Security Specialist focused on penetration testing, red teaming, purple teaming and vulnerability research.</div></div>`,
+  current: () => `<div class="term-block"><div class="term-success">Current role</div><div>Offensive Security Specialist | Red Teaming | Penetration Testing</div><div class="term-dim">Netherlands · Hybrid · Feb 2024 — Present</div><div>Web, infrastructure and enterprise assessments · adversary simulation · remediation guidance · vulnerability research</div></div>`,
   career: () => `<div class="term-block"><div class="term-success">Career overview</div><div>10+ years across offensive security, penetration testing, application security, infrastructure assessment, vulnerability research and earlier IT roles.</div><div class="term-dim">Detailed employer history is maintained on LinkedIn.</div></div>`,
   experience: () => { openSection('experience'); return `<div class="term-success">Opened Experience tab.</div>`; },
   skills: () => { openSection('skills'); return `<div class="term-block"><div class="term-success">Capability areas</div><div>Web & API Security · Windows · Active Directory · Infrastructure · Red Teaming · Purple Teaming · Vulnerability Research · Reporting · Security Automation</div></div>`; },
@@ -59,7 +61,7 @@ const aliases = {
   cert:'certs', certificate:'certs', certifications:'certs',
   link:'links', project:'projects', edu:'education', academic:'education',
   achievement:'recognition', achievements:'recognition', hof:'recognition',
-  cve:'cves', exp:'experience', work:'career'
+  cve:'cves', exp:'experience', work:'career', role:'current'
 };
 
 function normaliseCommand(raw) {

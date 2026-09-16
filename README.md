@@ -6,7 +6,7 @@ Interactive terminal-style cybersecurity portfolio for Asif Nawaz Minhas.
 
 https://about.asifnawazminhas.com
 
-## v1.3 highlights
+## v1.4 highlights
 
 - Employer-specific current-role details removed from the public console; LinkedIn remains the source for current employment history
 - Full career history and concurrent security/research roles
@@ -76,3 +76,16 @@ MIT License.
 - Upgraded typography to Manrope + IBM Plex Mono with system fallbacks
 - Refined spacing, surfaces, card depth, hover states and terminal styling
 - Improved visual hierarchy and responsive polish
+
+### v1.4 typography and density changes
+
+- Restored the current role in employer-neutral form
+- Current employer remains intentionally omitted
+- Reintroduced the `current` terminal command without employer naming
+- Reduced Overview copy substantially
+- Replaced long Current Operations list with four compact operation cards
+- Switched the primary UI typeface to Space Grotesk
+- Kept IBM Plex Mono for terminal and technical labels
+- Increased whitespace, card padding and line-height
+- Simplified Security Highlights
+- Improved visual hierarchy and readability
