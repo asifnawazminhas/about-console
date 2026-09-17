@@ -923,3 +923,51 @@ footer{
   border-top-color:#18351f;
   color:#5e655f;
 }
+
+
+/* v2.7 clickable certification credentials */
+.cert-grid .cert-card{
+  border:1px solid #18351f;
+  border-radius:10px;
+  background:linear-gradient(145deg,#0c0f0c,#090b09);
+  padding:16px;
+  display:grid;
+  grid-template-columns:90px minmax(0,1fr) auto;
+  align-items:center;
+  gap:12px;
+  text-decoration:none;
+  color:inherit;
+  transition:.18s ease;
+  box-shadow:inset 0 1px 0 #ffffff04;
+}
+.cert-grid .cert-card:hover{
+  transform:translateY(-2px);
+  border-color:#01ff41;
+  box-shadow:0 14px 36px rgba(0,0,0,.34);
+}
+.cert-grid .cert-card b{
+  font:700 17px var(--mono);
+  color:#01ff41;
+}
+.cert-grid .cert-card span{
+  color:#a2a2a2;
+  font-size:9px;
+}
+.cert-grid .cert-card small{
+  font:700 7px var(--mono);
+  color:#53ff7a;
+  border:1px solid #245b31;
+  border-radius:999px;
+  padding:5px 8px;
+  background:#0a160d;
+  white-space:nowrap;
+}
+@media(max-width:520px){
+  .cert-grid .cert-card{
+    grid-template-columns:72px 1fr;
+  }
+  .cert-grid .cert-card small{
+    grid-column:2;
+    justify-self:start;
+  }
+}

@@ -185,3 +185,21 @@ This forces clients and intermediary caches to fetch the matching CSS and JavaSc
 - all content and functionality from v2.5 retained
 - world map remains removed
 - cache-busting updated to v2.6.0
+
+
+### v2.7 credential links + favicon
+
+- certification cards are now clickable and open the user's public credential records
+- active certification set:
+  - OSEP
+  - OSCP
+  - OSWP
+  - OSWA
+  - CRTO
+  - CISSP
+  - CISM
+  - APTMC
+- CRTP removed because the credential is expired
+- CEH remains removed
+- new terminal-green `AM` favicon added
+- favicon, CSS and JavaScript cache-busting updated to v2.7.0

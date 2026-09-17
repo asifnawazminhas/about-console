@@ -56,7 +56,7 @@ const terminalCommands = {
     openSection('certifications');
     return `<div class="term-block">
       <span class="cmd">CERTIFICATIONS</span>
-      <div>OSEP · OSCP · OSWP · OSWA · CRTO · CRTP · CISSP · CISM · APTMC</div>
+      <div>OSEP · OSCP · OSWP · OSWA · CRTO · CISSP · CISM · APTMC</div>
       <div style="color:var(--accent)">→ Certifications panel opened on the left.</div>
     </div>`;
   },

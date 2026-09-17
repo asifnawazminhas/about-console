@@ -1,5 +1,21 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-<rect width="64" height="64" rx="14" fill="#061018"/>
-<rect x="8" y="8" width="48" height="48" rx="10" fill="#071a24" stroke="#00e5ff"/>
-<text x="32" y="39" text-anchor="middle" font-family="monospace" font-size="22" font-weight="700" fill="#00e5ff">AM</text>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#101310"/>
+      <stop offset="1" stop-color="#080808"/>
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="1.2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect x="3" y="3" width="58" height="58" rx="12" fill="url(#bg)" stroke="#245b31" stroke-width="2"/>
+  <path d="M14 45 25 18h5l11 27h-6l-2.3-6H22.4L20 45Zm10.4-11h6.3L27.6 26Z"
+        fill="#e7e7e7"/>
+  <path d="M39 45V18h5.4l5.6 12.5L55.6 18H61v27h-5.5V29.8l-4.3 9.6h-2.5l-4.3-9.6V45Z"
+        fill="#01ff41" filter="url(#glow)"/>
+  <circle cx="13" cy="13" r="2.2" fill="#53ff7a"/>
 </svg>
