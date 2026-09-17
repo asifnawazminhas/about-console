@@ -161,3 +161,14 @@ This forces clients and intermediary caches to fetch the matching CSS and JavaSc
   - 151+ verified fixes
 - all OpenBugBounty statistics, recognition cards, terminal commands and links retained
 - cache-busting updated to v2.4.0
+
+
+### v2.5 Green theme
+
+- switched the full console from cyan to a terminal-style emerald green palette
+- near-black / deep green panels
+- green navigation, card borders, terminal prompt, metrics and interaction states
+- layout, content, Research, Recognition, OpenBugBounty, Contact and terminal behaviour unchanged
+- world map remains removed
+- portrait placeholder remains unchanged for the final photo update
+- cache-busting updated to v2.5.0
