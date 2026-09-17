@@ -608,3 +608,318 @@ body{
 .quote-card>span{
   color:#235b3b;
 }
+
+
+/* v2.6 Askar-inspired terminal-green refinement
+   Neutral black/charcoal surfaces with bright #01FF41 accents. */
+:root{
+  --bg:#080808;
+  --surface:#0b0d0b;
+  --surface2:#101310;
+  --surface3:#121612;
+  --line:#18351f;
+  --line-strong:#245b31;
+  --text:#e7e7e7;
+  --muted:#8c8c8c;
+  --muted2:#626862;
+  --accent:#01ff41;
+  --accent-soft:#0fbf45;
+  --green:#53ff7a;
+  --warning:#f1c75b;
+  --danger:#ff6475;
+}
+
+body{
+  color:var(--text);
+  background:
+    radial-gradient(circle at 76% -15%,rgba(1,255,65,.035),transparent 28%),
+    linear-gradient(#080808,#090a09);
+}
+
+.page-grid{
+  opacity:.23;
+  background-image:
+    linear-gradient(rgba(24,53,31,.12) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(24,53,31,.12) 1px,transparent 1px);
+}
+
+.topbar{
+  background:rgba(8,8,8,.96);
+  border-bottom-color:#18351f;
+}
+
+.brand-mark{
+  color:#01ff41;
+  border-color:#245b31;
+  background:linear-gradient(145deg,#101510,#090b09);
+  box-shadow:inset 0 1px 0 #ffffff07,0 0 24px rgba(1,255,65,.035);
+}
+
+.brand span,
+.system-online small,
+.nav-btn,
+.section-head p,
+.profile-narrative p,
+.hero-sub,
+.stats-grid span,
+.stats-grid small,
+.practice-copy p,
+.timeline-card li,
+.timeline-mini-grid span,
+.matrix-grid b,
+.cert-grid span,
+.academic-grid p,
+.project-grid p,
+.research-grid p,
+.recognition-card p,
+.comms-node small,
+.connect-console pre,
+.recent-card li span,
+.quote-card blockquote,
+.section-intro p,
+.global-reach-copy p,
+.global-reach-metrics small,
+.obb-stats small{
+  color:#8c8c8c;
+}
+
+.nav-btn{
+  color:#777b77;
+}
+.nav-btn span{
+  color:#555c55;
+}
+.nav-btn:hover{
+  background:#0d0f0d;
+  color:#c9cec9;
+}
+.nav-btn.active{
+  color:#01ff41;
+  border-bottom-color:#01ff41;
+  background:linear-gradient(180deg,transparent,rgba(1,255,65,.055));
+}
+.nav-btn.active::after{
+  background:#01ff41;
+  box-shadow:0 0 16px rgba(1,255,65,.75);
+}
+
+.system-online,
+.online,
+.portrait-footer{
+  color:#53ff7a;
+}
+.pulse,
+.online i{
+  background:#53ff7a;
+  box-shadow:0 0 10px rgba(83,255,122,.65);
+}
+
+.dashboard,
+.terminal,
+.recent-card,
+.quote-card,
+.practice-shell,
+.principles,
+.timeline-card,
+.timeline-mini-grid article,
+.matrix-grid article,
+.cert-grid article,
+.academic-grid article,
+.project-grid a,
+.contact-grid a,
+.research-total,
+.research-breakdown,
+.research-grid a,
+.recognition-summary article,
+.recognition-card,
+.obb-panel,
+.global-reach-panel,
+.comms-node,
+.connect-console{
+  background:linear-gradient(145deg,#0c0f0c,#090b09);
+  border-color:#18351f;
+}
+
+.dashboard{
+  box-shadow:0 22px 70px rgba(0,0,0,.35),inset 0 1px 0 #ffffff04;
+}
+
+.corner.tl,.corner.tr,.corner.bl,.corner.br{
+  border-color:#01ff41;
+}
+
+.eyebrow,
+.hero-copy h1 em,
+.hero-copy h2,
+.cmd,
+.console-key,
+.console-ok,
+.practice-arrow,
+.project-grid b,
+.research-grid>a>b,
+.recognition-card>b,
+.node-arrow,
+.research-number,
+.research-breakdown span,
+.obb-stats span,
+.global-reach-metrics span,
+.stat-icon,
+.practice-icon,
+.cert-grid b,
+.timeline-meta span,
+.matrix-grid article>span,
+.project-grid a>span,
+.recognition-index,
+.node-icon{
+  color:#01ff41;
+}
+
+.profile-card{
+  background:linear-gradient(145deg,#0d100d,#090b09);
+  border-color:#245b31;
+}
+
+.portrait-placeholder{
+  background:
+    radial-gradient(circle at 50% 32%,rgba(1,255,65,.055),transparent 35%),
+    linear-gradient(145deg,#101510,#090b09);
+}
+.portrait-placeholder::before{
+  border-color:#245b31;
+}
+.portrait-placeholder span{
+  color:#efefef;
+  text-shadow:0 0 18px rgba(1,255,65,.11);
+}
+
+.hero-actions a{
+  border-color:#245b31;
+  color:#d9ddd9;
+  background:#0b0d0b;
+}
+.hero-actions a:hover{
+  border-color:#01ff41;
+  color:#fff;
+}
+.hero-actions .primary{
+  background:#01ff41;
+  color:#050805;
+  border-color:#01ff41;
+  box-shadow:0 10px 24px rgba(1,255,65,.12);
+}
+
+.stats-grid article{
+  border-color:#18351f;
+  background:linear-gradient(145deg,#0d100d,#090b09);
+}
+.stat-icon,
+.practice-icon,
+.node-icon{
+  background:#0b2412;
+}
+
+.practice-shell,
+.principles{
+  border-color:#18351f;
+  border-left-color:#01ff41;
+}
+
+.practice-card{
+  border-color:#1c4426;
+  background:
+    radial-gradient(circle at 92% 5%,rgba(1,255,65,.028),transparent 33%),
+    linear-gradient(145deg,#0d100d,#090b09);
+}
+.practice-card:hover,
+.project-grid a:hover,
+.research-grid a:hover,
+.recognition-card:hover,
+.comms-node:hover{
+  border-color:#01ff41;
+  box-shadow:0 16px 42px rgba(0,0,0,.35);
+}
+
+.practice-num{
+  color:#1b4a28;
+}
+
+.principles>div span,
+.matrix-grid b,
+.recognition-featured span,
+.connect-tags span{
+  border-color:#214d2d;
+  color:#8d968f;
+  background:transparent;
+}
+
+.terminal-head,
+.terminal-input,
+.side-title,
+.obb-head,
+.connect-head,
+.section-intro{
+  border-color:#18351f;
+}
+
+.terminal{
+  background:linear-gradient(180deg,#0a0c0a,#080908);
+}
+.ascii{
+  color:#01ff41;
+  text-shadow:0 0 14px rgba(1,255,65,.12);
+}
+.terminal-input{
+  background:#080a08;
+}
+.terminal-body a,
+.terminal-body a:visited{
+  color:#01ff41;
+}
+
+.timeline-card.current{
+  border-color:#245b31;
+}
+
+.cert-grid small{
+  color:#53ff7a;
+  border-color:#245b31;
+  background:#0a160d;
+}
+
+.research-grid a{
+  background:
+    radial-gradient(circle at 95% 0%,rgba(1,255,65,.025),transparent 34%),
+    linear-gradient(145deg,#0d100d,#090b09);
+}
+
+.obb-head a{
+  border-color:#245b31;
+  color:#01ff41;
+  background:#0b0d0b;
+}
+.obb-head a:hover{
+  background:#0e150f;
+  border-color:#01ff41;
+}
+
+.obb-stats,
+.global-reach-metrics{
+  background:#18351f;
+}
+.obb-stats article,
+.global-reach-metrics article{
+  background:linear-gradient(145deg,#0d100d,#090b09);
+}
+
+.comms-node:hover{
+  background:linear-gradient(145deg,#0f140f,#0a0c0a);
+}
+
+.quote-card>span{
+  color:#1b4a28;
+}
+
+footer{
+  border-top-color:#18351f;
+  color:#5e655f;
+}

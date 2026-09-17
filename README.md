@@ -172,3 +172,16 @@ This forces clients and intermediary caches to fetch the matching CSS and JavaSc
 - world map remains removed
 - portrait placeholder remains unchanged for the final photo update
 - cache-busting updated to v2.5.0
+
+
+### v2.6 terminal green refinement
+
+- replaced the emerald/teal green wash with an Askar-inspired terminal palette
+- primary accent changed to `#01FF41`
+- backgrounds moved to neutral black / charcoal instead of green-tinted surfaces
+- borders softened to dark green
+- muted body copy moved to neutral grey
+- bright green reserved for active navigation, headings, terminal prompts, metrics, buttons and hover states
+- all content and functionality from v2.5 retained
+- world map remains removed
+- cache-busting updated to v2.6.0
