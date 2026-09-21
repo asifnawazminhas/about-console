@@ -103,7 +103,7 @@ const terminalCommands = {
     openSection('projects');
     return `<div class="term-block">
       <span class="cmd">PROJECTS</span>
-      <div>Security Studio · Security Notes · Main cybersecurity site</div>
+      <div>Security Studio · Security Notes · Main cybersecurity site · wwwtree-redteam</div>
       <div style="color:var(--accent)">→ Projects panel opened on the left.</div>
     </div>`;
   },
