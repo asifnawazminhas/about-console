@@ -103,7 +103,7 @@ const terminalCommands = {
     openSection('projects');
     return `<div class="term-block">
       <span class="cmd">PROJECTS</span>
-      <div>Security Studio · Security Notes · Main cybersecurity site · wwwtree-redteam</div>
+      <div>Security Studio · Security Notes · Awesome Offensive OneLiners · Main cybersecurity site · wwwtree-redteam</div>
       <div style="color:var(--accent)">→ Projects panel opened on the left.</div>
     </div>`;
   },
@@ -111,12 +111,12 @@ const terminalCommands = {
     openSection('contact');
     return `<div class="term-block">
       <span class="cmd">PUBLIC CHANNELS</span>
-      <div>GitHub · LinkedIn · Security Notes · Security Studio · Main Site · OpenBugBounty · Research Profile</div>
+      <div>GitHub · LinkedIn · Security Notes · Offensive OneLiners · Security Studio · Main Site · OpenBugBounty · Research Profile</div>
       <div>No email or contact form is exposed on this console.</div>
       <div style="color:var(--accent)">→ Contact panel opened on the left.</div>
     </div>`;
   },
-  links: () => `<div class="term-block"><a href="https://github.com/asifnawazminhas" target="_blank" rel="noopener noreferrer">GitHub</a><br><a href="https://www.linkedin.com/in/asifminhasnl/" target="_blank" rel="noopener noreferrer">LinkedIn</a><br><a href="https://notes.asifnawazminhas.com" target="_blank" rel="noopener noreferrer">Security Notes</a><br><a href="https://studio.asifnawazminhas.com" target="_blank" rel="noopener noreferrer">Security Studio</a></div>`,
+  links: () => `<div class="term-block"><a href="https://github.com/asifnawazminhas" target="_blank" rel="noopener noreferrer">GitHub</a><br><a href="https://www.linkedin.com/in/asifminhasnl/" target="_blank" rel="noopener noreferrer">LinkedIn</a><br><a href="https://notes.asifnawazminhas.com" target="_blank" rel="noopener noreferrer">Security Notes</a><br><a href="https://oneliners.asifnawazminhas.com" target="_blank" rel="noopener noreferrer">Offensive OneLiners</a><br><a href="https://studio.asifnawazminhas.com" target="_blank" rel="noopener noreferrer">Security Studio</a></div>`,
   whoami: () => `<div class="term-block"><span class="cmd">asif@console</span> authorised-user</div>`,
   clear: () => ''
 };

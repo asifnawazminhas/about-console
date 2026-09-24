@@ -6,7 +6,7 @@ Interactive terminal-style cybersecurity portfolio for Asif Nawaz Minhas.
 
 https://about.asifnawazminhas.com
 
-## v2.0 recognition update
+## v2.8 project update
 
 This release expands the cyber-console portfolio with public research and communication modules:
 
@@ -46,6 +46,7 @@ clear
 - Main site: https://www.asifnawazminhas.com
 - Security Notes: https://notes.asifnawazminhas.com
 - Security Studio: https://studio.asifnawazminhas.com
+- Awesome Offensive OneLiners: https://oneliners.asifnawazminhas.com
 - GitHub: https://github.com/asifnawazminhas
 - LinkedIn: https://www.linkedin.com/in/asifminhasnl/
 
@@ -203,3 +204,13 @@ This forces clients and intermediary caches to fetch the matching CSS and JavaSc
 - CEH remains removed
 - new terminal-green `AM` favicon added
 - favicon, CSS and JavaScript cache-busting updated to v2.7.0
+
+
+### v2.8 project update
+
+- added Awesome Offensive OneLiners to the Projects inventory
+- added `https://oneliners.asifnawazminhas.com` to Public Channels
+- added an Offensive OneLiners hero shortcut
+- added Offensive OneLiners to terminal `projects`, `contact`, and `links` output
+- recent activity updated to include the OneLiners project
+- static asset cache busting updated to v2.8.0
