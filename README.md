@@ -6,7 +6,7 @@ Interactive terminal-style cybersecurity portfolio for Asif Nawaz Minhas.
 
 https://about.asifnawazminhas.com
 
-## v2.8 project update
+## v2.9 project update
 
 This release expands the cyber-console portfolio with public research and communication modules:
 
@@ -17,6 +17,7 @@ This release expands the cyber-console portfolio with public research and commun
 - responsive overview hero
 - four polished Core Practice Area cards
 - experience, skills, certifications, education, projects and contact panels
+- Awesome AI Tools added to Projects, Public Channels and quick links
 - public milestone / recent-activity panel
 - quote updated to “Security improves through testing, learning, and sharing.”
 - employer-neutral current role
@@ -47,6 +48,7 @@ clear
 - Security Notes: https://notes.asifnawazminhas.com
 - Security Studio: https://studio.asifnawazminhas.com
 - Awesome Offensive OneLiners: https://oneliners.asifnawazminhas.com
+- Awesome AI Tools: https://ai.asifnawazminhas.com
 - GitHub: https://github.com/asifnawazminhas
 - LinkedIn: https://www.linkedin.com/in/asifminhasnl/
 
