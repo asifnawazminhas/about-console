@@ -6,7 +6,7 @@ Interactive terminal-style cybersecurity portfolio for Asif Nawaz Minhas.
 
 https://about.asifnawazminhas.com
 
-## v2.9 project update
+## v2.8 project update
 
 This release expands the cyber-console portfolio with public research and communication modules:
 
@@ -17,7 +17,6 @@ This release expands the cyber-console portfolio with public research and commun
 - responsive overview hero
 - four polished Core Practice Area cards
 - experience, skills, certifications, education, projects and contact panels
-- Awesome AI Tools added to Projects, Public Channels and quick links
 - public milestone / recent-activity panel
 - quote updated to “Security improves through testing, learning, and sharing.”
 - employer-neutral current role
@@ -216,3 +215,8 @@ This forces clients and intermediary caches to fetch the matching CSS and JavaSc
 - added Offensive OneLiners to terminal `projects`, `contact`, and `links` output
 - recent activity updated to include the OneLiners project
 - static asset cache busting updated to v2.8.0
+
+## v3.0 update
+
+- Awesome AI Tools is now visible directly on the Overview homepage as a featured project.
+- It also remains available from the hero shortcuts, Projects panel, Public Channels and terminal commands.

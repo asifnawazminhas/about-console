@@ -971,3 +971,35 @@ footer{
     justify-self:start;
   }
 }
+
+
+/* v3.0 featured AI project on overview */
+.overview-project-shell{margin-top:24px}
+.overview-project-card{
+  display:grid;grid-template-columns:72px 1fr auto;gap:18px;align-items:center;
+  padding:20px;text-decoration:none;border:1px solid rgba(0,255,102,.28);border-radius:10px;
+  background:linear-gradient(135deg,rgba(0,255,102,.055),rgba(0,255,102,.015)),rgba(5,11,7,.62);
+  transition:.18s ease
+}
+.overview-project-card:hover{transform:translateY(-2px);border-color:rgba(0,255,102,.58);box-shadow:0 14px 38px rgba(0,255,102,.08)}
+.overview-project-index{
+  width:58px;height:58px;display:grid;place-items:center;border:1px solid rgba(0,255,102,.38);
+  border-radius:8px;color:var(--accent);font-weight:900;font-size:18px;background:rgba(0,255,102,.055)
+}
+.overview-project-copy small{color:var(--accent);font-size:10px;letter-spacing:.13em;font-weight:800}
+.overview-project-copy h3{margin:5px 0 7px;font-size:21px;color:var(--text)}
+.overview-project-copy p{margin:0;max-width:950px;color:var(--muted);line-height:1.55;font-size:12px}
+.overview-project-tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:12px}
+.overview-project-tags span{
+  padding:5px 8px;border:1px solid rgba(0,255,102,.20);border-radius:5px;color:#8fffb5;
+  background:rgba(0,255,102,.04);font-size:9px;font-weight:700
+}
+.overview-project-open{color:var(--accent);font-size:11px;font-weight:900;white-space:nowrap}
+@media(max-width:800px){
+  .overview-project-card{grid-template-columns:58px 1fr}
+  .overview-project-open{grid-column:2}
+}
+@media(max-width:520px){
+  .overview-project-card{grid-template-columns:1fr}
+  .overview-project-open{grid-column:1}
+}
