@@ -226,3 +226,13 @@ This forces clients and intermediary caches to fetch the matching CSS and JavaSc
 - Removed the extra Featured Project block from the Overview homepage.
 - Kept AI Security Tools in the homepage quick-link button row.
 - Kept Awesome AI Tools in Projects, Public Channels and terminal links.
+
+## v3.2
+
+UI polish inspired by modern cyber event interfaces while retaining the existing portfolio identity:
+
+- Added a slim SYS::ONLINE status strip.
+- Added compact operational summary tiles beneath the hero.
+- Added STATUS / TYPE micro-labels to project cards.
+- Added stronger but restrained hover interactions and section accent lines.
+- Preserved the existing dark green console theme and professional portfolio structure.

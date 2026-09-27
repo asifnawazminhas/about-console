@@ -973,3 +973,134 @@ footer{
 }
 
 
+/* v3.2 - tactical UI polish inspired by high-end cyber event interfaces */
+.system-strip{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  flex-wrap:wrap;
+  margin:0 0 16px;
+  padding:8px 11px;
+  border:1px solid rgba(0,255,102,.16);
+  border-radius:7px;
+  background:rgba(0,255,102,.025);
+  color:var(--muted);
+  font-family:"IBM Plex Mono",monospace;
+  font-size:9px;
+  font-weight:700;
+  letter-spacing:.10em;
+  text-transform:uppercase;
+}
+.system-dot{
+  width:7px;
+  height:7px;
+  border-radius:50%;
+  background:var(--accent);
+  box-shadow:0 0 12px rgba(0,255,102,.75);
+}
+.system-strip>span:not(.system-dot):not(.system-sep){color:#9affb8}
+.system-sep{opacity:.34}
+
+.ops-stats{
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:9px;
+  margin-top:16px;
+}
+.ops-stats>div{
+  position:relative;
+  overflow:hidden;
+  min-width:0;
+  padding:11px 12px;
+  border:1px solid rgba(0,255,102,.15);
+  border-radius:7px;
+  background:linear-gradient(180deg,rgba(0,255,102,.03),rgba(0,0,0,.02)),rgba(7,13,9,.54);
+}
+.ops-stats>div::after{
+  content:"";
+  position:absolute;
+  left:0;
+  bottom:0;
+  width:36%;
+  height:1px;
+  background:var(--accent);
+  opacity:.45;
+}
+.ops-stats small{
+  display:block;
+  margin-bottom:4px;
+  color:var(--muted);
+  font:700 8px/1.2 "IBM Plex Mono",monospace;
+  letter-spacing:.12em;
+}
+.ops-stats strong{
+  display:block;
+  color:var(--accent);
+  font:700 15px/1.2 "IBM Plex Mono",monospace;
+}
+.ops-stats span{
+  display:block;
+  margin-top:3px;
+  color:var(--muted);
+  font-size:9px;
+}
+
+.project-meta{
+  display:flex;
+  flex-wrap:wrap;
+  gap:5px;
+  margin:4px 0 9px;
+}
+.project-meta span{
+  padding:3px 5px;
+  border:1px solid rgba(0,255,102,.14);
+  border-radius:4px;
+  background:rgba(0,255,102,.025);
+  color:#86fca9;
+  font:700 7px/1 "IBM Plex Mono",monospace;
+  letter-spacing:.08em;
+}
+
+.practice-card,
+.timeline-card,
+.skill-card,
+.cert-card,
+.recognition-card,
+.project-card,
+.comms-node{
+  transition:transform .16s ease,border-color .16s ease,box-shadow .16s ease,background .16s ease;
+}
+.practice-card:hover,
+.timeline-card:hover,
+.skill-card:hover,
+.cert-card:hover,
+.recognition-card:hover,
+.project-card:hover,
+.comms-node:hover{
+  transform:translateY(-2px);
+  border-color:rgba(0,255,102,.34);
+  box-shadow:0 10px 26px rgba(0,255,102,.05);
+}
+
+.section-head,
+.section-intro{
+  position:relative;
+}
+.section-head::after,
+.section-intro::after{
+  content:"";
+  display:block;
+  width:48px;
+  height:1px;
+  margin-top:8px;
+  background:linear-gradient(90deg,var(--accent),transparent);
+  opacity:.45;
+}
+
+@media(max-width:900px){
+  .ops-stats{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:520px){
+  .ops-stats{grid-template-columns:1fr}
+  .system-strip{gap:6px}
+}
