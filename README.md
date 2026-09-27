@@ -220,3 +220,9 @@ This forces clients and intermediary caches to fetch the matching CSS and JavaSc
 
 - Awesome AI Tools is now visible directly on the Overview homepage as a featured project.
 - It also remains available from the hero shortcuts, Projects panel, Public Channels and terminal commands.
+
+## v3.1 cleanup
+
+- Removed the extra Featured Project block from the Overview homepage.
+- Kept AI Security Tools in the homepage quick-link button row.
+- Kept Awesome AI Tools in Projects, Public Channels and terminal links.
